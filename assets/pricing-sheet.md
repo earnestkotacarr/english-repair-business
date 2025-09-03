@@ -1,5 +1,5 @@
-# English Repair Business - Service Pricing Sheet
-# English Repair Business - 料金表
+# English Repair - Service Pricing Sheet
+# English Repair - 料金表
 
 ---
 
@@ -95,4 +95,4 @@
 📧 info@englishrepair.jp
 📞 +81-XX-XXXX-XXXX
 
-© 2024 English Repair Business. All prices exclude consumption tax.
+© 2024 English Repair. All prices exclude consumption tax.

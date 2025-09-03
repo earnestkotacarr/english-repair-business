@@ -1,7 +1,7 @@
 export default function PrivacyPage({ params: { locale } }: { params: { locale: string } }) {
   const content = locale === 'ja' ? {
     title: 'プライバシーポリシー',
-    intro: 'English Repair Business（以下「当社」）は、お客様の個人情報保護を重要視し、以下のポリシーに従って適切に管理いたします。',
+    intro: 'English Repair（以下「当社」）は、お客様の個人情報保護を重要視し、以下のポリシーに従って適切に管理いたします。',
     sections: [
       {
         title: '1. 個人情報の収集',
@@ -22,7 +22,7 @@ export default function PrivacyPage({ params: { locale } }: { params: { locale: 
     ]
   } : {
     title: 'Privacy Policy',
-    intro: 'English Repair Business ("we" or "our") values your privacy and manages personal information according to the following policy.',
+    intro: 'English Repair ("we" or "our") values your privacy and manages personal information according to the following policy.',
     sections: [
       {
         title: '1. Information Collection',

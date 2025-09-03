@@ -186,7 +186,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <div className="aspect-square bg-white">
                   <Image
                     src="/founder.jpg"
-                    alt="Founder - English Repair Business"
+                    alt="Riley Eusden - English Repair"
                     width={600}
                     height={600}
                     className="w-full h-full object-cover"

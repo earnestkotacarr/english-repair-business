@@ -137,7 +137,7 @@
     }
   },
   "about": {
-    "title": "English Repair Businessについて",
+    "title": "English Repairについて",
     "intro": "日本の革新的技術とグローバル市場を、成果につながる正確な英語で結びます。",
     "founder": "代表者",
     "founderName": "ライリー・ユースデン",
@@ -158,10 +158,10 @@
     }
   },
   "footer": {
-    "company": "English Repair Business",
+    "company": "English Repair",
     "tagline": "技術英語のリノベーション",
     "privacy": "プライバシーポリシー",
     "legal": "特定商取引法に基づく表記",
-    "copyright": "© 2024 English Repair Business. All rights reserved."
+    "copyright": "© 2024 English Repair. All rights reserved."
   }
 }

@@ -34,7 +34,7 @@ export default function Hero({ locale }: { locale: string }) {
             <div className="aspect-square rounded-2xl shadow-2xl overflow-hidden bg-white border border-erb-gray-100">
               <Image
                 src="/founder.jpg"
-                alt="Founder - English Repair Business"
+                alt="Riley Eusden - English Repair"
                 width={600}
                 height={600}
                 className="w-full h-full object-cover"

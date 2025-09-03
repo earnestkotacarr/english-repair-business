@@ -26,7 +26,7 @@ export default function Header({ locale }: { locale: string }) {
             <div className="w-10 h-10 bg-gradient-to-br from-erb-vermilion to-red-700 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">ER</span>
             </div>
-            <span className="text-sm font-medium text-erb-gray-600 hidden sm:inline">English Repair Business</span>
+            <span className="text-sm font-medium text-erb-gray-600 hidden sm:inline">English Repair</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">

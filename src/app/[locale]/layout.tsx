@@ -12,7 +12,7 @@ import '../globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'English Repair Business - Technical English Renovation',
+  title: 'English Repair - Technical English Renovation',
   description: 'Transform your Japanese B2B technical content into English that converts. Web, PDFs, and media editing with terminology management.',
   keywords: 'technical English, B2B, website editing, terminology, Japan, 技術英語, 英文校正',
 }

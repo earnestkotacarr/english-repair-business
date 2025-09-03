@@ -1,4 +1,4 @@
-# English Repair Business
+# English Repair
 ## Technical English That Converts / 成果につながる技術英語
 
 ---
@@ -100,5 +100,5 @@ See how your current English could be improved with a complimentary analysis of 
 
 ---
 
-*English Repair Business - Helping Japanese technology reach the world*
+*English Repair - Helping Japanese technology reach the world*
 *日本の技術を世界に届ける英語リノベーション*

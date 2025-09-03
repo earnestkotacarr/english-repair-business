@@ -1,4 +1,4 @@
-# English Repair Business Website
+# English Repair Website
 
 A bilingual (Japanese/English) Next.js website for B2B technical English renovation services targeting Japanese SMEs.
 

@@ -1,4 +1,4 @@
-# Replace-Me Checklist for English Repair Business Website
+# Replace-Me Checklist for English Repair Website
 
 ## ⚠️ MUST REPLACE BEFORE DEPLOYMENT
 
