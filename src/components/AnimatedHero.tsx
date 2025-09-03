@@ -221,7 +221,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 }}
               />
               
-              {/* Floating Badge */}
+              {/* Floating Badge with Riley's Name */}
               <motion.div
                 className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-full shadow-xl border border-erb-gray-100"
                 animate={{
@@ -236,7 +236,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                   <span className="text-sm font-medium text-erb-navy">
-                    {locale === 'ja' ? '対応可能' : 'Available Now'}
+                    Riley Eusden - {locale === 'ja' ? '対応可能' : 'Available Now'}
                   </span>
                 </div>
               </motion.div>
