@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "services": "サービス",
+    "process": "プロセス",
+    "results": "実績",
+    "about": "会社概要",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "headline": "技術の正確さを守り、伝わる英語に作り替える。",
+    "subheadline": "B2B技術資料・Web・PDFを、用語の正確さ／読みやすさ／行動喚起まで一気通貫で改善。",
+    "cta": "無料1ページミニ監査を依頼"
+  },
+  "values": {
+    "title": "ERBの特徴",
+    "item1": {
+      "title": "B2B技術分野に特化",
+      "description": "半導体、精密機械、FA、医療機器など技術分野の専門性"
+    },
+    "item2": {
+      "title": "用語集＋スタイルガイド付",
+      "description": "一貫性のある用語管理と文体統一を実現"
+    },
+    "item3": {
+      "title": "二段階編集＆SLA",
+      "description": "トランスクリエーション→ネイティブQAの品質保証体制"
+    }
+  },
+  "services": {
+    "title": "サービス",
+    "web": {
+      "title": "Web英語リノベーション",
+      "description": "企業サイトの英語を根本から改善",
+      "price": "10ページ（約8,000語）¥400,000〜",
+      "timeline": "3〜7週間",
+      "includes": "用語集、スタイルガイド、2〜3回の改稿"
+    },
+    "audit": {
+      "title": "英語クイック監査",
+      "description": "現状の問題点を明確化",
+      "price": "¥150,000〜300,000",
+      "timeline": "5営業日",
+      "includes": "スコアカード、5つのBefore/Afterサンプル"
+    },
+    "qa": {
+      "title": "英語QAデスク",
+      "description": "月額制の英語品質サポート",
+      "price": "6チケット/月 ¥120,000〜",
+      "timeline": "24〜72時間SLA",
+      "includes": "迅速な英文チェック、用語相談、軽微な修正"
+    },
+    "media": {
+      "title": "メディア編集",
+      "description": "プレスリリース、記事、論説の英文化",
+      "price": "¥60,000〜300,000",
+      "timeline": "3〜10営業日",
+      "includes": "メディア向け最適化、SEO考慮"
+    }
+  },
+  "process": {
+    "title": "プロセス",
+    "step1": {
+      "title": "1. ヒアリング＆資料受領",
+      "description": "URL/PDFを共有いただき、課題を把握",
+      "time": "1営業日"
+    },
+    "step2": {
+      "title": "2. クイック監査",
+      "description": "1ページ無料診断または有料詳細監査",
+      "time": "2〜5営業日"
+    },
+    "step3": {
+      "title": "3. 提案＆見積",
+      "description": "改善内容、スケジュール、投資対効果を明示",
+      "time": "2営業日"
+    },
+    "step4": {
+      "title": "4. 用語調整",
+      "description": "専門用語の確認（30分のSMEレビュー）",
+      "time": "1営業日"
+    },
+    "step5": {
+      "title": "5. 一括納品",
+      "description": "変更履歴付きクリーンファイル",
+      "time": "契約による"
+    },
+    "step6": {
+      "title": "6. 改稿対応",
+      "description": "2〜3回の改稿ラウンド",
+      "time": "各3営業日"
+    },
+    "step7": {
+      "title": "7. 引き渡し＆継続サポート",
+      "description": "月額QAデスク（オプション）",
+      "time": "継続"
+    }
+  },
+  "results": {
+    "title": "実績",
+    "case1": {
+      "industry": "半導体製造装置",
+      "problem": "技術仕様が不明瞭で海外からの問い合わせが少ない",
+      "solution": "用語統一と構造改善で技術優位性を明確化",
+      "outcome": "ページ滞在時間+28%、四半期RFQ+6件"
+    },
+    "case2": {
+      "industry": "精密計測機器",
+      "problem": "競合との差別化が伝わらない",
+      "solution": "ユースケース中心の構成に変更、専門用語を平易に",
+      "outcome": "海外展示会リード+40%"
+    },
+    "beforeAfter": {
+      "title": "Before/After サンプル",
+      "before": "弊社の独自技術により高精度測定が可能となっております。",
+      "after": "Our proprietary sensing algorithm achieves ±0.001mm accuracy—3x more precise than conventional methods.",
+      "note": "曖昧な表現を具体的数値と比較優位で置換"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "q1": {
+      "question": "翻訳会社との違いは？",
+      "answer": "翻訳会社は「日本語を英語に」しますが、ERBは「ビジネス成果を出す英語に」作り替えます。用語集作成、二段階編集、KPI追跡まで含む総合的アプローチです。"
+    },
+    "q2": {
+      "question": "技術的な専門知識は？",
+      "answer": "基本的な技術理解はありますが、深い専門知識は貴社SMEとの30分レビューで確認します。正確性を最優先に、誇張のない表現を心がけます。"
+    },
+    "q3": {
+      "question": "納期と改稿回数は？",
+      "answer": "10ページで3〜4週間、20ページで5〜7週間が目安。改稿は標準2〜3回。特急対応は+30%で承ります。"
+    },
+    "q4": {
+      "question": "AIは使用しますか？",
+      "answer": "編集補助としてAIツールを活用しますが、最終的な品質確認と調整は必ず人間が行います。"
+    }
+  },
+  "about": {
+    "title": "English Repair Businessについて",
+    "intro": "日本の優れた技術を世界に正しく伝える。それが私たちの使命です。",
+    "founder": "代表者",
+    "founderName": "[代表者名]",
+    "experience": "B2B技術マーケティング15年、日英バイリンガル",
+    "approach": "直訳では伝わらない技術の価値を、正確性を保ちながら説得力のある英語に作り替えます。"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "cta": "まずは無料1ページミニ監査から",
+    "form": {
+      "company": "会社名",
+      "name": "お名前",
+      "email": "メールアドレス",
+      "phone": "電話番号（任意）",
+      "url": "対象URL/資料",
+      "message": "ご相談内容",
+      "submit": "送信する"
+    }
+  },
+  "footer": {
+    "company": "English Repair Business",
+    "tagline": "技術英語のリノベーション",
+    "privacy": "プライバシーポリシー",
+    "legal": "特定商取引法に基づく表記",
+    "copyright": "© 2024 English Repair Business. All rights reserved."
+  }
+}

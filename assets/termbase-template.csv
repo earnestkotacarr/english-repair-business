@@ -1,0 +1,21 @@
+Japanese,English,Context,Notes,Status
+半導体,semiconductor,General term,,Approved
+精密機械,precision machinery,General term,,Approved
+製造装置,manufacturing equipment,Equipment category,,Approved
+検査装置,inspection system,Equipment category,,Approved
+測定精度,measurement accuracy,Specification,,Approved
+公差,tolerance,Specification,,Approved
+歩留まり,yield,Performance metric,,Approved
+スループット,throughput,Performance metric,,Approved
+実装,implementation,Process term,,Approved
+搬送,transfer/transport,Process term,Context-dependent,Review
+基板,substrate/board,Component,Context-dependent,Review
+治具,jig/fixture,Tool,,Approved
+校正,calibration,Process,,Approved
+保守,maintenance,Service,,Approved
+故障,failure/malfunction,Issue,Context-dependent,Review
+不具合,defect/issue,Issue,Context-dependent,Review
+仕様書,specifications,Document,,Approved
+取扱説明書,user manual/operating instructions,Document,,Approved
+お問い合わせ,inquiry/contact us,CTA,Context-dependent,Review
+資料請求,request information/download resources,CTA,Context-dependent,Review

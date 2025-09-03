@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "process": "Process",
+    "results": "Results",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Preserve technical accuracy—rebuild it into English that lands.",
+    "subheadline": "End-to-end improvement of B2B technical web/PDFs—terminology, clarity, and conversion.",
+    "cta": "Request Free 1-Page Mini Audit"
+  },
+  "values": {
+    "title": "What Makes ERB Different",
+    "item1": {
+      "title": "B2B Technical Specialty",
+      "description": "Deep expertise in semiconductors, precision machinery, FA, medical devices"
+    },
+    "item2": {
+      "title": "Termbase + Style Guide Included",
+      "description": "Consistent terminology management and unified voice"
+    },
+    "item3": {
+      "title": "Two-Stage Editing & SLA",
+      "description": "Transcreation → Native QA quality assurance"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "web": {
+      "title": "Web English Renovation",
+      "description": "Complete overhaul of your corporate English",
+      "price": "10 pages (~8,000 words) from ¥400,000",
+      "timeline": "3-7 weeks",
+      "includes": "Termbase, style guide, 2-3 revision rounds"
+    },
+    "audit": {
+      "title": "Quick English Audit",
+      "description": "Identify current issues clearly",
+      "price": "¥150,000-300,000",
+      "timeline": "5 business days",
+      "includes": "Scorecard, 5 Before/After samples"
+    },
+    "qa": {
+      "title": "English QA Desk",
+      "description": "Monthly English quality support",
+      "price": "6 tickets/month from ¥120,000",
+      "timeline": "24-72 hour SLA",
+      "includes": "Quick English checks, terminology consultation, minor edits"
+    },
+    "media": {
+      "title": "Media Editing",
+      "description": "Press releases, articles, op-eds",
+      "price": "¥60,000-300,000",
+      "timeline": "3-10 business days",
+      "includes": "Media optimization, SEO consideration"
+    }
+  },
+  "process": {
+    "title": "Process",
+    "step1": {
+      "title": "1. Discovery & Intake",
+      "description": "Share URL/PDFs, understand challenges",
+      "time": "1 business day"
+    },
+    "step2": {
+      "title": "2. Quick Audit",
+      "description": "Free 1-page assessment or paid detailed audit",
+      "time": "2-5 business days"
+    },
+    "step3": {
+      "title": "3. Proposal & Quote",
+      "description": "Clear scope, timeline, and ROI",
+      "time": "2 business days"
+    },
+    "step4": {
+      "title": "4. Terminology Alignment",
+      "description": "Technical term review (30-min SME session)",
+      "time": "1 business day"
+    },
+    "step5": {
+      "title": "5. Batch Delivery",
+      "description": "Tracked changes + clean files",
+      "time": "Per contract"
+    },
+    "step6": {
+      "title": "6. Revision Rounds",
+      "description": "2-3 rounds of refinements",
+      "time": "3 business days each"
+    },
+    "step7": {
+      "title": "7. Handover & Support",
+      "description": "Optional monthly QA desk",
+      "time": "Ongoing"
+    }
+  },
+  "results": {
+    "title": "Results",
+    "case1": {
+      "industry": "Semiconductor Equipment",
+      "problem": "Unclear specifications, low overseas inquiries",
+      "solution": "Unified terminology and structure to highlight technical advantages",
+      "outcome": "+28% time on page, +6 RFQs per quarter"
+    },
+    "case2": {
+      "industry": "Precision Measurement",
+      "problem": "Differentiation not conveyed vs competitors",
+      "solution": "Use-case driven structure, simplified technical terms",
+      "outcome": "+40% trade show leads from overseas"
+    },
+    "beforeAfter": {
+      "title": "Before/After Sample",
+      "before": "Our unique technology enables high-precision measurement.",
+      "after": "Our proprietary sensing algorithm achieves ±0.001mm accuracy—3x more precise than conventional methods.",
+      "note": "Replaced vague claims with specific metrics and competitive advantage"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "How is this different from a translation agency?",
+      "answer": "Translation agencies convert Japanese to English. ERB rebuilds your English for business outcomes—including termbase creation, two-stage editing, and KPI tracking."
+    },
+    "q2": {
+      "question": "What about technical expertise?",
+      "answer": "We have foundational technical knowledge, but verify deep domain specifics through 30-min SME reviews. Accuracy first, no exaggeration."
+    },
+    "q3": {
+      "question": "Timeline and revisions?",
+      "answer": "10 pages: 3-4 weeks, 20 pages: 5-7 weeks. Standard 2-3 revision rounds. Rush available at +30%."
+    },
+    "q4": {
+      "question": "Do you use AI?",
+      "answer": "AI tools assist in editing, but final quality checks and adjustments are always human."
+    }
+  },
+  "about": {
+    "title": "About English Repair Business",
+    "intro": "Helping Japanese technology reach the world with clarity and credibility.",
+    "founder": "Founder",
+    "founderName": "[Founder Name]",
+    "experience": "15 years B2B tech marketing, Japanese-English bilingual",
+    "approach": "We transform technical content that gets lost in translation into English that preserves accuracy while driving action."
+  },
+  "contact": {
+    "title": "Contact",
+    "cta": "Start with a Free 1-Page Mini Audit",
+    "form": {
+      "company": "Company",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "url": "Target URL/Document",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
+  "footer": {
+    "company": "English Repair Business",
+    "tagline": "Technical English Renovation",
+    "privacy": "Privacy Policy",
+    "legal": "Legal",
+    "copyright": "© 2024 English Repair Business. All rights reserved."
+  }
+}
