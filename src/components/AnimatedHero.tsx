@@ -131,7 +131,6 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                   className="group px-8 py-4 bg-gradient-to-r from-erb-blue-500 to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
                 >
                   {t('cta')}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </Link>
               
@@ -179,17 +178,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <motion.div
-              animate={{
-                rotate: [0, 5, -5, 0],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="relative"
-            >
+            <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-erb-gray-100">
                 <div className="aspect-square bg-white">
                   <Image
@@ -229,26 +218,17 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 }}
               />
               
-              {/* Floating Badge with Riley's Name */}
-              <motion.div
-                className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-full shadow-xl border border-erb-gray-100"
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-sm font-medium text-erb-navy">
-                    Riley Eusden - {locale === 'ja' ? '対応可能' : 'Available Now'}
-                  </span>
-                </div>
-              </motion.div>
-            </motion.div>
+            </div>
+            
+            {/* Professional Caption */}
+            <div className="mt-6 text-center">
+              <p className="text-sm font-medium text-erb-navy">
+                Professional English Consultant
+              </p>
+              <p className="text-xs text-erb-gray-600 mt-1">
+                B2B Asian Markets Specialist
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>
