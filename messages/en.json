@@ -9,7 +9,7 @@
   },
   "hero": {
     "headline": "Professional English that preserves Japanese nuance and technical accuracy.",
-    "subheadline": "Comprehensive improvement of technical web content and media—capturing nuance with clarity and conversion.",
+    "subheadline": "Full-scale improvement of technical content and media—capturing nuance with clarity and impact.",
     "cta": "Request Free 1-Page Mini Audit"
   },
   "values": {
@@ -32,28 +32,28 @@
     "web": {
       "title": "Website English Renovation",
       "description": "Complete overhaul of your English website",
-      "price": "¥40,000 per page",
+      "price": "¥10,000-20,000 per page (based on word count & technicality)",
       "timeline": "3-7 business days",
       "includes": "Edited draft highlighting all changes with detailed explanations"
     },
     "audit": {
       "title": "Comprehensive English Audit",
-      "description": "Identify current issues clearly",
-      "price": "¥15,000 per page",
+      "description": "Complete analysis of all English content including website and media",
+      "price": "¥30,000-100,000 (full audit)",
       "timeline": "5 business days",
-      "includes": "Edited draft with improvement recommendations"
+      "includes": "Detailed analysis with improvement recommendations"
     },
     "qa": {
       "title": "Monthly Subscription Plan",
-      "description": "Ongoing English quality support subscription",
+      "description": "Ongoing English editing support subscription",
       "price": "5 projects/month for ¥100,000",
       "timeline": "24-72 hour response",
-      "includes": "5 projects per month (max 4 pages each), priority support"
+      "includes": "5 projects per month (max 4 pages each, additional charges for exceeding), priority support"
     },
     "media": {
       "title": "Media & Press Release Edits",
-      "description": "Professional press releases, articles, op-eds",
-      "price": "¥50,000-60,000 per page",
+      "description": "Professionally written and edited press releases, articles, op-eds",
+      "price": "¥25,000-50,000 per page",
       "timeline": "3-10 business days",
       "includes": "Professional high-quality press release style English writing"
     }
@@ -65,7 +65,7 @@
       "title": "Initial Audit & Analysis",
       "description": "We understand your needs and analyze your content",
       "time": "2-3 business days",
-      "details": ["Video/in-person consultation (free)", "Company vernacular & terminology alignment", "Short-term improvement plan with value demonstration"]
+      "details": ["Video/in-person consultation (free)", "Company terminology alignment", "Short-term improvement plan with value demonstration"]
     },
     "step2": {
       "title": "Content Transformation",
@@ -84,14 +84,14 @@
     "title": "Proven Results",
     "case1": {
       "industry": "Semiconductor Equipment",
-      "problem": "Difficulty conveying specifications, low overseas exposure",
-      "solution": "Clarified technical terminology with professional structure to highlight technical advantages",
+      "problem": "Difficulty conveying product applications in native English leading to low overseas exposure",
+      "solution": "Clarified technical terminology with professional structure that's readable for a native English audience",
       "outcome": "+28% time on page, +6 RFQs per quarter"
     },
     "case2": {
       "industry": "Manufacturing Technology",
-      "problem": "Technical advantages not effectively communicated to global market",
-      "solution": "Restructured content to emphasize unique capabilities and competitive advantages",
+      "problem": "Technical advantages lost in translation to the global market",
+      "solution": "Japanese nuance and technology captured in native English to emphasize capabilities and competitive advantages to a foreign audience",
       "outcome": "+40% trade show leads from overseas"
     },
     "beforeAfter": {
@@ -132,7 +132,7 @@
     "colleague": "Technical Specialist",
     "colleagueName": "Earnest Kota (航太)",
     "colleagueExperience": "Technical Writer | Japan Market Specialist",
-    "colleagueEducation": "Inbound PhD Candidate, University of Tokyo | Engineering Background",
+    "colleagueEducation": "Inbound PhD Candidate, University of Tokyo | Engineer",
     "colleagueBio": "Bringing deep technical expertise and cultural insight, I ensure your content maintains accuracy while resonating with both Japanese and international audiences.",
     "approach": "Our collaborative approach combines native English excellence with technical precision and deep Japan market understanding. Together, we transform your technical content into powerful business communications that maintain the accuracy your products embody while driving international engagement."
   },

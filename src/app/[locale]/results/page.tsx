@@ -28,7 +28,7 @@ export default function ResultsPage() {
       <div className="container">
         <h1 className="text-4xl font-bold text-center mb-4 text-erb-navy">{t('title')}</h1>
         <p className="text-center text-erb-gray-600 mb-12 max-w-2xl mx-auto">
-          Real client transformations with measurable impact on global business growth
+          Significant English content transformations with measurable impact on global business relationships
         </p>
         
         <div className="max-w-5xl mx-auto mb-16 space-y-8">
