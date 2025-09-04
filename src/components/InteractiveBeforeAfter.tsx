@@ -230,29 +230,6 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                 </motion.div>
               </div>
 
-              {/* Transformation Arrow */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6, type: "spring" }}
-                className="flex justify-center mt-8"
-              >
-                <div className="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-4">
-                  <motion.div
-                    animate={{
-                      x: [0, 10, 0],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                    className="bg-gradient-to-r from-erb-vermilion to-red-600 text-white p-4 rounded-full shadow-lg"
-                  >
-                    <ArrowRight className="w-6 h-6" />
-                  </motion.div>
-                </div>
-              </motion.div>
             </motion.div>
           </AnimatePresence>
         </Tabs.Root>
