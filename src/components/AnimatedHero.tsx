@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import CountUp from 'react-countup'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 
 export default function AnimatedHero({ locale }: { locale: string }) {
@@ -20,11 +19,6 @@ export default function AnimatedHero({ locale }: { locale: string }) {
     setMounted(true)
   }, [])
 
-  const stats = [
-    { value: 500, suffix: '+', label: locale === 'ja' ? 'プロジェクト完了' : 'Projects Completed' },
-    { value: 2000000, suffix: '+', label: locale === 'ja' ? '編集済み単語数' : 'Words Edited' },
-    { value: 98, suffix: '%', label: locale === 'ja' ? '顧客満足度' : 'Client Satisfaction' },
-  ]
 
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-erb-blue-50 via-white to-erb-blue-50">
@@ -33,7 +27,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
         <img 
           src="/images/tech-hero.jpg" 
           alt="" 
-          className="w-full h-full object-cover opacity-5"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
       {/* Animated Background Elements */}
@@ -145,30 +139,6 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               </Link>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              className="grid grid-cols-3 gap-8 pt-8 border-t border-erb-gray-200"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9, duration: 0.8 }}
-            >
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center sm:text-left">
-                  <div className="text-2xl font-bold text-erb-navy">
-                    {mounted && (
-                      <CountUp
-                        end={stat.value}
-                        duration={2.5}
-                        delay={1}
-                        suffix={stat.suffix}
-                        separator=","
-                      />
-                    )}
-                  </div>
-                  <div className="text-sm text-erb-gray-500 mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
           </motion.div>
 
           {/* Image with Animations */}
@@ -226,7 +196,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 Professional English Consultant
               </p>
               <p className="text-xs text-erb-gray-600 mt-1">
-                B2B Asian Markets Specialist
+                B2B Asian Market Specialist
               </p>
             </div>
           </motion.div>

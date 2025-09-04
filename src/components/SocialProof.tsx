@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Quote, Star, Building2, Award, Shield, TrendingUp } from 'lucide-react'
+import { Quote, Building2, Award, Shield, TrendingUp } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 export default function SocialProof({ locale }: { locale: string }) {
@@ -19,7 +19,6 @@ export default function SocialProof({ locale }: { locale: string }) {
       author: isJapanese ? "田中 太郎" : "Taro Tanaka",
       role: isJapanese ? "海外営業部長" : "International Sales Director",
       company: isJapanese ? "〇〇半導体株式会社" : "XX Semiconductor Co., Ltd.",
-      rating: 5
     },
     {
       quote: isJapanese
@@ -28,7 +27,6 @@ export default function SocialProof({ locale }: { locale: string }) {
       author: isJapanese ? "佐藤 花子" : "Hanako Sato",
       role: isJapanese ? "マーケティング課長" : "Marketing Manager",
       company: isJapanese ? "△△精密機器" : "YY Precision Instruments",
-      rating: 5
     },
     {
       quote: isJapanese
@@ -37,7 +35,6 @@ export default function SocialProof({ locale }: { locale: string }) {
       author: isJapanese ? "山田 次郎" : "Jiro Yamada",
       role: isJapanese ? "技術部門責任者" : "Technical Department Head",
       company: isJapanese ? "□□メディカル" : "ZZ Medical",
-      rating: 5
     }
   ]
 
@@ -156,12 +153,6 @@ export default function SocialProof({ locale }: { locale: string }) {
             >
               <Quote className="absolute top-6 right-6 w-8 h-8 text-erb-vermilion/20" />
               
-              {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
               
               {/* Quote */}
               <p className="text-erb-gray-600 mb-6 leading-relaxed">

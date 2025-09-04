@@ -149,17 +149,6 @@ export default function AnimatedValueCards() {
                       {value.description}
                     </p>
                     
-                    {/* Hover Arrow */}
-                    <motion.div
-                      className="mt-6 flex items-center text-erb-vermilion opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      initial={{ x: -10 }}
-                      whileHover={{ x: 0 }}
-                    >
-                      <span className="text-sm font-medium">Learn more</span>
-                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </motion.div>
                   </div>
                 </motion.div>
               </motion.div>
