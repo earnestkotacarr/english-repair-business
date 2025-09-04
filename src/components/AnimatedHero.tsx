@@ -80,7 +80,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-vermilion/10 text-erb-vermilion rounded-full text-sm font-medium"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-vermilion/10 text-erb-vermilion rounded-full text-sm font-medium mt-4"
             >
               <CheckCircle className="w-4 h-4" />
               {locale === 'ja' ? '日本のB2B企業に特化' : 'Specialized for Japanese B2B'}

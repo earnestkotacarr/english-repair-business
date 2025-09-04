@@ -8,23 +8,23 @@
     "contact": "Contact"
   },
   "hero": {
-    "headline": "Preserve technical accuracy—rebuild it into English that lands.",
-    "subheadline": "End-to-end improvement of B2B technical web/PDFs—terminology, clarity, and conversion.",
+    "headline": "Preserve technical accuracy—while crafting English that connects.",
+    "subheadline": "Comprehensive improvement of technical web content and media—capturing nuance with clarity and conversion.",
     "cta": "Request Free 1-Page Mini Audit"
   },
   "values": {
-    "title": "What Makes ERB Different",
+    "title": "What Makes English Repair Different",
     "item1": {
-      "title": "B2B Technical Specialty",
-      "description": "Deep expertise in semiconductors, precision machinery, FA, medical devices"
+      "title": "Technical Specialty",
+      "description": "Deep expertise in semiconductors, manufacturing equipment, precision machinery, medical devices, sensors, and electronic systems"
     },
     "item2": {
-      "title": "Termbase + Style Guide Included",
-      "description": "Consistent terminology management and unified voice"
+      "title": "Consistent Terminology & Grammar Excellence",
+      "description": "Unified technical terminology with academic-level grammar and style consistency"
     },
     "item3": {
-      "title": "Two-Stage Editing & SLA",
-      "description": "Transcreation → Native QA quality assurance"
+      "title": "Native English Quality Assurance",
+      "description": "Multi-stage editing process with native English verification"
     }
   },
   "services": {
@@ -59,41 +59,41 @@
     }
   },
   "process": {
-    "title": "Process",
+    "title": "Our Simple Process",
     "step1": {
-      "title": "1. Discovery & Intake",
-      "description": "Share URL/PDFs, understand challenges",
-      "time": "1 business day"
+      "title": "1. Analysis",
+      "description": "We review your content and identify improvement areas",
+      "time": "2-3 business days"
     },
     "step2": {
-      "title": "2. Quick Audit",
-      "description": "Free 1-page assessment or paid detailed audit",
-      "time": "2-5 business days"
+      "title": "2. Transformation",
+      "description": "We systematically improve terminology and structure",
+      "time": "1-2 weeks"
     },
     "step3": {
-      "title": "3. Proposal & Quote",
-      "description": "Clear scope, timeline, and ROI",
-      "time": "2 business days"
+      "title": "3. Delivery",
+      "description": "You receive polished content with tracked changes",
+      "time": "Final review"
     },
     "step4": {
-      "title": "4. Terminology Alignment",
-      "description": "Technical term review (30-min SME session)",
-      "time": "1 business day"
+      "title": "4. Support (Optional)",
+      "description": "Ongoing assistance for continuous improvement",
+      "time": "Monthly"
     },
     "step5": {
-      "title": "5. Batch Delivery",
-      "description": "Tracked changes + clean files",
-      "time": "Per contract"
+      "title": "",
+      "description": "",
+      "time": ""
     },
     "step6": {
-      "title": "6. Revision Rounds",
-      "description": "2-3 rounds of refinements",
-      "time": "3 business days each"
+      "title": "",
+      "description": "",
+      "time": ""
     },
     "step7": {
-      "title": "7. Handover & Support",
-      "description": "Optional monthly QA desk",
-      "time": "Ongoing"
+      "title": "",
+      "description": "",
+      "time": ""
     }
   },
   "results": {
@@ -121,7 +121,7 @@
     "title": "Frequently Asked Questions",
     "q1": {
       "question": "How is this different from a translation agency?",
-      "answer": "Translation agencies convert Japanese to English. ERB rebuilds your English for business outcomes—including termbase creation, two-stage editing, and KPI tracking."
+      "answer": "Translation agencies convert Japanese to English. English Repair rebuilds your English for business outcomes—including termbase creation, two-stage editing, and KPI tracking."
     },
     "q2": {
       "question": "What about technical expertise?",

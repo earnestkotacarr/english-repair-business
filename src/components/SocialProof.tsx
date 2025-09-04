@@ -14,8 +14,8 @@ export default function SocialProof({ locale }: { locale: string }) {
   const testimonials = [
     {
       quote: isJapanese 
-        ? "ERBのおかげで、海外からの問い合わせが3倍に増えました。技術用語の統一と構造改善により、製品の優位性が明確に伝わるようになりました。"
-        : "Thanks to ERB, our overseas inquiries tripled. The unified terminology and improved structure clearly convey our product advantages.",
+        ? "English Repairのおかげで、海外からの問い合わせが3倍に増えました。技術用語の統一と構造改善により、製品の優位性が明確に伝わるようになりました。"
+        : "Thanks to English Repair, our overseas inquiries tripled. The unified terminology and improved structure clearly convey our product advantages.",
       author: isJapanese ? "田中 太郎" : "Taro Tanaka",
       role: isJapanese ? "海外営業部長" : "International Sales Director",
       company: isJapanese ? "〇〇半導体株式会社" : "XX Semiconductor Co., Ltd.",
@@ -32,8 +32,8 @@ export default function SocialProof({ locale }: { locale: string }) {
     },
     {
       quote: isJapanese
-        ? "技術文書の英語化で長年苦労していましたが、ERBは正確性を保ちながら読みやすい英語に変換してくれました。社内でも好評です。"
-        : "We struggled with technical document translation for years. ERB transformed them into readable English while maintaining accuracy. Great internal feedback.",
+        ? "技術文書の英語化で長年苦労していましたが、English Repairは正確性を保ちながら読みやすい英語に変換してくれました。社内でも好評です。"
+        : "We struggled with technical document translation for years. English Repair transformed them into readable English while maintaining accuracy. Great internal feedback.",
       author: isJapanese ? "山田 次郎" : "Jiro Yamada",
       role: isJapanese ? "技術部門責任者" : "Technical Department Head",
       company: isJapanese ? "□□メディカル" : "ZZ Medical",
@@ -52,9 +52,7 @@ export default function SocialProof({ locale }: { locale: string }) {
 
   const trustBadges = [
     { icon: Shield, label: isJapanese ? 'NDA標準' : 'NDA Standard' },
-    { icon: Award, label: isJapanese ? '15年の実績' : '15 Years Experience' },
-    { icon: TrendingUp, label: isJapanese ? '成果保証' : 'Results Guaranteed' },
-    { icon: Building2, label: isJapanese ? '500+企業' : '500+ Companies' },
+    { icon: TrendingUp, label: isJapanese ? '成果重視' : 'Results Focused' },
   ]
 
   return (

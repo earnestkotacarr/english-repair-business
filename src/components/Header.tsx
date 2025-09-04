@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import LocaleSwitcher from './LocaleSwitcher'
+import ENRLogo from './ENRLogo'
 
 export default function Header({ locale }: { locale: string }) {
   const t = useTranslations('nav')
@@ -22,11 +23,8 @@ export default function Header({ locale }: { locale: string }) {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-erb-gray-100">
       <div className="container">
         <div className="flex items-center justify-between h-20">
-          <Link href={`/${locale}`} className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-erb-vermilion to-red-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">ER</span>
-            </div>
-            <span className="text-sm font-medium text-erb-gray-600 hidden sm:inline">English Repair</span>
+          <Link href={`/${locale}`} className="flex items-center">
+            <ENRLogo className="h-10" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">

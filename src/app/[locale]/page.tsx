@@ -10,9 +10,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
     <>
       <AnimatedHero locale={locale} />
       <AnimatedValueCards />
+      <InteractiveBeforeAfter locale={locale} />
       <SocialProof locale={locale} />
       <ProcessTimeline />
-      <InteractiveBeforeAfter locale={locale} />
     </>
   )
 }

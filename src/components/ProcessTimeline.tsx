@@ -10,10 +10,7 @@ export default function ProcessTimeline() {
     { title: t('step2.title'), description: t('step2.description'), time: t('step2.time') },
     { title: t('step3.title'), description: t('step3.description'), time: t('step3.time') },
     { title: t('step4.title'), description: t('step4.description'), time: t('step4.time') },
-    { title: t('step5.title'), description: t('step5.description'), time: t('step5.time') },
-    { title: t('step6.title'), description: t('step6.description'), time: t('step6.time') },
-    { title: t('step7.title'), description: t('step7.description'), time: t('step7.time') },
-  ]
+  ].filter(step => step.title && step.title !== '')
 
   return (
     <section className="py-20 bg-gradient-to-b from-erb-gray-50 to-white">

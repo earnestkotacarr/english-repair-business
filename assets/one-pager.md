@@ -63,7 +63,7 @@ Japanese B2B technical companies lose opportunities due to unclear English that 
 
 ---
 
-### Why ERB? / なぜERB？
+### Why English Repair? / なぜEnglish Repair？
 
 🎯 **B2B Technical Focus**
    Half-conductor, precision machinery, medical devices

@@ -30,9 +30,9 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       },
       after: {
         title: isJapanese ? '改善後' : 'After',
-        content: "We manufacture next-generation EUV lithography systems achieving 2nm process nodes—30% faster throughput than industry standards while reducing defect rates by 45%.",
+        content: "We develop advanced lithography systems for semiconductor manufacturing, with improved throughput and reduced defect rates compared to conventional systems.",
         improvements: [
-          isJapanese ? '具体的な数値' : 'Specific metrics',
+          isJapanese ? '具体的な説明' : 'Specific description',
           isJapanese ? '技術的優位性' : 'Technical advantages',
           isJapanese ? '明確な価値提案' : 'Clear value proposition'
         ]
@@ -53,11 +53,11 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       },
       after: {
         title: isJapanese ? '改善後' : 'After',
-        content: "Achieves ±0.001mm measurement accuracy across -40°C to +85°C with <0.1% drift over 10,000 hours MTBF. IP67-rated enclosure ensures reliable operation in industrial environments.",
+        content: "The system maintains ±0.001mm measurement accuracy across wide temperature ranges and delivers consistent performance with minimal drift over extended operation periods.",
         improvements: [
           isJapanese ? '精密な仕様' : 'Precise specifications',
           isJapanese ? '動作条件明記' : 'Clear operating conditions',
-          isJapanese ? '信頼性指標' : 'Reliability metrics'
+          isJapanese ? '信頼性の表現' : 'Reliability description'
         ]
       }
     },
@@ -76,11 +76,11 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       },
       after: {
         title: isJapanese ? '改善後' : 'After',
-        content: "Tokyo, March 15—XYZ Corp launches the industry's first AI-powered defect detection system, reducing semiconductor inspection time by 70% while achieving 99.97% accuracy. Available Q2 2024. Schedule demo: demo.xyz.com",
+        content: "Tokyo—XYZ Corp introduces an AI-powered defect detection system that significantly reduces semiconductor inspection time while maintaining high accuracy levels. Available Q2 2024. Learn more at our website.",
         improvements: [
           isJapanese ? '具体的な利点' : 'Specific benefits',
           isJapanese ? '明確な時期' : 'Clear timeline',
-          isJapanese ? '行動喚起' : 'Strong CTA'
+          isJapanese ? '行動喚起' : 'Clear CTA'
         ]
       }
     }
