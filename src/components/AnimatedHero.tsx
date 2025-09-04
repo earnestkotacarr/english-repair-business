@@ -27,12 +27,20 @@ export default function AnimatedHero({ locale }: { locale: string }) {
   ]
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-erb-gray-50 via-white to-erb-gray-50">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-erb-blue-50 via-white to-erb-blue-50">
+      {/* Tech background image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/images/tech-hero.jpg" 
+          alt="" 
+          className="w-full h-full object-cover opacity-5"
+        />
+      </div>
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           style={{ y: y1 }}
-          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-erb-vermilion/10 to-transparent rounded-full blur-3xl"
+          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-erb-blue-400/10 to-transparent rounded-full blur-3xl"
         />
         <motion.div
           style={{ y: y2 }}
@@ -46,7 +54,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
         {mounted && [...Array(5)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-erb-vermilion/20 rounded-full"
+            className="absolute w-2 h-2 bg-erb-blue-400/20 rounded-full"
             animate={{
               x: [0, 100, 0],
               y: [0, -100, 0],
@@ -80,7 +88,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-vermilion/10 text-erb-vermilion rounded-full text-sm font-medium mt-4"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-blue-500/10 text-erb-blue-600 rounded-full text-sm font-medium mt-4"
             >
               <CheckCircle className="w-4 h-4" />
               {locale === 'ja' ? '日本のB2B企業に特化' : 'Specialized for Japanese B2B'}
@@ -120,7 +128,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
+                  className="group px-8 py-4 bg-gradient-to-r from-erb-blue-500 to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
                 >
                   {t('cta')}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -197,7 +205,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               
               {/* Decorative Elements */}
               <motion.div
-                className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-erb-vermilion to-red-600 rounded-2xl opacity-20"
+                className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-erb-blue-500 to-erb-blue-600 rounded-2xl opacity-20"
                 animate={{
                   scale: [1, 1.2, 1],
                   rotate: [0, 90, 0],

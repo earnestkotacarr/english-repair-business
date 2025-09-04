@@ -10,7 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         'erb-navy': '#0F172A',
-        'erb-vermilion': '#1E40AF',
+        'erb-vermilion': '#2563EB',
+        'erb-blue': {
+          600: '#1E40AF',
+          500: '#2563EB',
+          400: '#3B82F6',
+          300: '#60A5FA',
+          200: '#93C5FD',
+          100: '#DBEAFE',
+          50: '#EFF6FF'
+        },
         'erb-gray': {
           600: '#475569',
           500: '#64748B',

@@ -30,91 +30,75 @@
   "services": {
     "title": "Services",
     "web": {
-      "title": "Web English Renovation",
-      "description": "Complete overhaul of your corporate English",
-      "price": "10 pages (~8,000 words) from ¥400,000",
-      "timeline": "3-7 weeks",
-      "includes": "Termbase, style guide, 2-3 revision rounds"
+      "title": "Website English Renovation",
+      "description": "Complete overhaul of your English website",
+      "price": "¥40,000 per page",
+      "timeline": "3-7 business days",
+      "includes": "Edited draft highlighting all changes with detailed explanations"
     },
     "audit": {
-      "title": "Quick English Audit",
+      "title": "Comprehensive English Audit",
       "description": "Identify current issues clearly",
-      "price": "¥150,000-300,000",
+      "price": "¥15,000 per page",
       "timeline": "5 business days",
-      "includes": "Scorecard, 5 Before/After samples"
+      "includes": "Edited draft with improvement recommendations"
     },
     "qa": {
-      "title": "English QA Desk",
-      "description": "Monthly English quality support",
-      "price": "6 tickets/month from ¥120,000",
-      "timeline": "24-72 hour SLA",
-      "includes": "Quick English checks, terminology consultation, minor edits"
+      "title": "Monthly Subscription Plan",
+      "description": "Ongoing English quality support subscription",
+      "price": "5 projects/month for ¥100,000",
+      "timeline": "24-72 hour response",
+      "includes": "5 projects per month (max 4 pages each), priority support"
     },
     "media": {
-      "title": "Media Editing",
-      "description": "Press releases, articles, op-eds",
-      "price": "¥60,000-300,000",
+      "title": "Media & Press Release Edits",
+      "description": "Professional press releases, articles, op-eds",
+      "price": "¥50,000-60,000 per page",
       "timeline": "3-10 business days",
-      "includes": "Media optimization, SEO consideration"
+      "includes": "Professional high-quality press release style English writing"
     }
   },
   "process": {
-    "title": "Our Simple Process",
+    "title": "Simple 3-Step Process",
+    "subtitle": "We make it easy and stress-free",
     "step1": {
-      "title": "1. Analysis",
-      "description": "We review your content and identify improvement areas",
-      "time": "2-3 business days"
+      "title": "Discovery & Analysis",
+      "description": "We understand your needs and analyze your content",
+      "time": "2-3 business days",
+      "details": ["Initial consultation (free)", "Content review", "Improvement plan creation"]
     },
     "step2": {
-      "title": "2. Transformation",
-      "description": "We systematically improve terminology and structure",
-      "time": "1-2 weeks"
+      "title": "Content Transformation",
+      "description": "We enhance your English systematically",
+      "time": "3-7 business days",
+      "details": ["Terminology alignment", "Structure optimization", "Native English refinement"]
     },
     "step3": {
-      "title": "3. Delivery",
-      "description": "You receive polished content with tracked changes",
-      "time": "Final review"
-    },
-    "step4": {
-      "title": "4. Support (Optional)",
-      "description": "Ongoing assistance for continuous improvement",
-      "time": "Monthly"
-    },
-    "step5": {
-      "title": "",
-      "description": "",
-      "time": ""
-    },
-    "step6": {
-      "title": "",
-      "description": "",
-      "time": ""
-    },
-    "step7": {
-      "title": "",
-      "description": "",
-      "time": ""
+      "title": "Delivery & Support",
+      "description": "You receive polished content ready to use",
+      "time": "1-2 business days",
+      "details": ["Tracked changes document", "Clean final version", "Follow-up support available"]
     }
   },
   "results": {
-    "title": "Results",
+    "title": "Proven Results",
     "case1": {
       "industry": "Semiconductor Equipment",
-      "problem": "Unclear specifications, low overseas inquiries",
-      "solution": "Unified terminology and structure to highlight technical advantages",
+      "problem": "Difficulty conveying specifications, low overseas exposure",
+      "solution": "Clarified technical terminology with professional structure to highlight technical advantages",
       "outcome": "+28% time on page, +6 RFQs per quarter"
     },
     "case2": {
-      "industry": "Precision Measurement",
-      "problem": "Differentiation not conveyed vs competitors",
-      "solution": "Use-case driven structure, simplified technical terms",
+      "industry": "Manufacturing Technology",
+      "problem": "Technical advantages not effectively communicated to global market",
+      "solution": "Restructured content to emphasize unique capabilities and competitive advantages",
       "outcome": "+40% trade show leads from overseas"
     },
     "beforeAfter": {
       "title": "Before/After Sample",
-      "before": "Our unique technology enables high-precision measurement.",
-      "after": "Our proprietary sensing algorithm achieves ±0.001mm accuracy—3x more precise than conventional methods.",
-      "note": "Replaced vague claims with specific metrics and competitive advantage"
+      "before": "Our technology can measure with 0.001mm accuracy and it is 3 times better than other products in precision.",
+      "after": "Our proprietary sensing technology achieves ±0.001mm measurement accuracy—3x more precise than conventional solutions.",
+      "note": "Preserved technical data while improving structure and professional tone"
     }
   },
   "faq": {
@@ -138,11 +122,19 @@
   },
   "about": {
     "title": "About English Repair",
-    "intro": "Bridging Japanese innovation with global markets through precision English that converts.",
-    "founder": "Founder",
+    "intro": "Bridging Japanese innovation with global markets through English that maintains technical precision while being accessible to international audiences.",
+    "teamTitle": "Our Team",
+    "founder": "Lead Consultant",
     "founderName": "Riley Eusden",
-    "experience": "International Business Professional | Japan Market Specialist | Technical English Expert",
-    "approach": "With deep experience in Japan's B2B landscape and native English expertise, I transform your technical content into compelling business communications that resonate with international audiences while maintaining the precision your technology demands."
+    "founderExperience": "Native English Expert | Corporate Communications",
+    "founderEducation": "Master's Degree, Osaka University",
+    "founderBio": "With over a decade in Japan's B2B landscape, I specialize in transforming technical content into compelling English that drives international business growth.",
+    "colleague": "Technical Specialist",
+    "colleagueName": "Earnest Kota (航太)",
+    "colleagueExperience": "Technical Writer | Japan Market Specialist",
+    "colleagueEducation": "Engineering Background | Bilingual Professional",
+    "colleagueBio": "Bringing deep technical expertise and cultural insight, I ensure your content maintains accuracy while resonating with both Japanese and international audiences.",
+    "approach": "Our collaborative approach combines native English excellence with technical precision and deep Japan market understanding. Together, we transform your technical content into powerful business communications that maintain the accuracy your products embody while driving international engagement."
   },
   "contact": {
     "title": "Contact",
