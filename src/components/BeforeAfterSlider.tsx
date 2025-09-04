@@ -41,7 +41,7 @@ export default function BeforeAfterSlider() {
       </div>
 
       <div className="relative overflow-hidden">
-        <div className="min-h-[220px]">
+        <div className="min-h-[260px]">
           {/* Before */}
           <div 
             className={`transition-all duration-500 ${
