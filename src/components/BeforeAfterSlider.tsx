@@ -61,7 +61,7 @@ export default function BeforeAfterSlider() {
                 <div className="mt-4 text-sm text-erb-gray-500 space-y-1">
                   <div className="flex items-center gap-2">
                     <span className="text-red-500">✗</span>
-                    <span>Awkward phrasing: "it is 3 times better"</span>
+                    <span>Awkward phrasing: &quot;it is 3 times better&quot;</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-red-500">✗</span>
