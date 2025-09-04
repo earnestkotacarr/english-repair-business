@@ -14,7 +14,7 @@ export default function Header({ locale }: { locale: string }) {
     { href: `/${locale}`, label: t('home') },
     { href: `/${locale}/services`, label: t('services') },
     { href: `/${locale}/process`, label: t('process') },
-    { href: `/${locale}/results`, label: t('results') },
+    // { href: `/${locale}/results`, label: t('results') }, // Hidden for now
     { href: `/${locale}/about`, label: t('about') },
     { href: `/${locale}/contact`, label: t('contact') },
   ]
