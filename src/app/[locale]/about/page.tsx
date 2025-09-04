@@ -25,7 +25,7 @@ export default function AboutPage() {
       bio: t('colleagueBio'),
       image: '/earnest.jpg',
       fallbackImage: null,
-      linkedin: null
+      linkedin: 'https://www.linkedin.com/in/earnest-k-carr-a4362b150/'
     }
   ]
 
