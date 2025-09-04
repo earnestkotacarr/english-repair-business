@@ -23,8 +23,8 @@ export default function AboutPage() {
       experience: t('colleagueExperience'),
       education: t('colleagueEducation'),
       bio: t('colleagueBio'),
-      image: '/earnest.jpg',
-      fallbackImage: null,
+      image: '/Earnest Kota Carr.jpg',
+      fallbackImage: '/Earnest Kota Carr.jpg',
       linkedin: 'https://www.linkedin.com/in/earnest-k-carr-a4362b150/'
     }
   ]
@@ -57,15 +57,15 @@ export default function AboutPage() {
                   {/* Profile Image */}
                   <div className="flex justify-center mb-6">
                     <div className="w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-erb-blue-100 to-erb-blue-200 shadow-lg">
-                      {member.fallbackImage ? (
+                      {member.image ? (
                         <img 
-                          src={member.fallbackImage}
+                          src={member.image}
                           alt={member.name}
                           className="w-full h-full object-cover"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement
-                            if (member.image !== member.fallbackImage) {
-                              target.src = member.fallbackImage!
+                            if (member.fallbackImage && member.image !== member.fallbackImage) {
+                              target.src = member.fallbackImage
                             }
                           }}
                         />

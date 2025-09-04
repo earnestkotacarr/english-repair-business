@@ -62,22 +62,22 @@
     "title": "Simple 3-Step Process",
     "subtitle": "We make it easy and stress-free",
     "step1": {
-      "title": "Discovery & Analysis",
+      "title": "Initial Audit & Analysis",
       "description": "We understand your needs and analyze your content",
       "time": "2-3 business days",
-      "details": ["Initial consultation (free)", "Content review", "Improvement plan creation"]
+      "details": ["Video/in-person consultation (free)", "Company vernacular & terminology alignment", "Short-term improvement plan with value demonstration"]
     },
     "step2": {
       "title": "Content Transformation",
       "description": "We enhance your English systematically",
       "time": "3-7 business days",
-      "details": ["Terminology alignment", "Structure optimization", "Native English refinement"]
+      "details": ["Native English refinement", "Structure optimization", "Technical accuracy retention with Japanese explanations"]
     },
     "step3": {
       "title": "Delivery & Support",
       "description": "You receive polished content ready to use",
       "time": "1-2 business days",
-      "details": ["Tracked changes document", "Clean final version", "Follow-up support available"]
+      "details": ["Edits highlighted within content", "Clean, ready-to-publish final version", "Follow-up support available"]
     }
   },
   "results": {
