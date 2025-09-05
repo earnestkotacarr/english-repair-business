@@ -41,10 +41,35 @@ export default function ContactPage() {
     alert('Form submission placeholder - integrate with your preferred service')
   }
 
+  const formatPhoneNumber = (value: string) => {
+    // Remove all non-digit characters
+    const phoneNumber = value.replace(/\D/g, '')
+    
+    // Format as (123) 456-7890 for US numbers
+    if (phoneNumber.length <= 10) {
+      if (phoneNumber.length <= 3) {
+        return phoneNumber
+      } else if (phoneNumber.length <= 6) {
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`
+      } else {
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`
+      }
+    }
+    // For international numbers, just add spaces every 4 digits
+    return phoneNumber.match(/.{1,4}/g)?.join(' ') || phoneNumber
+  }
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    let value = e.target.value
+    
+    // Apply phone formatting if it's the phone field
+    if (e.target.name === 'phone') {
+      value = formatPhoneNumber(value)
+    }
+    
     setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: value
     }))
     // Clear error when user starts typing
     if (errors[e.target.name]) {
@@ -139,6 +164,7 @@ export default function ContactPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  placeholder="(123) 456-7890"
                   className="w-full px-4 py-2 border border-erb-gray-300 rounded-md focus:ring-2 focus:ring-erb-vermilion focus:border-transparent"
                 />
               </div>

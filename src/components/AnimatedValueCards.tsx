@@ -118,8 +118,8 @@ export default function AnimatedValueCards() {
                     
                     {/* Icon Container */}
                     <motion.div
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.6 }}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
                       className="relative inline-block mb-6"
                     >
                       <div className={`w-16 h-16 bg-gradient-to-br ${value.gradient} rounded-xl flex items-center justify-center shadow-lg`}>

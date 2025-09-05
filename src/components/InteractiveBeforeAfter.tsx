@@ -173,10 +173,10 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                 {/* Before Card */}
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="relative"
+                  className="relative h-full"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-red-50 rounded-2xl blur-xl opacity-50" />
-                  <div className="relative bg-white rounded-2xl border-2 border-red-200 p-8 shadow-xl">
+                  <div className="relative bg-white rounded-2xl border-2 border-red-200 p-8 shadow-xl min-h-[500px] flex flex-col">
                     <div className="flex items-center justify-between mb-6">
                       <h3 className="text-2xl font-bold text-erb-navy flex items-center gap-2">
                         <XCircle className="w-6 h-6 text-red-500" />
@@ -191,7 +191,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                       {currentExample.before.content}
                     </div>
                     
-                    <div className="space-y-2">
+                    <div className="space-y-2 mt-auto">
                       <p className="text-sm font-medium text-erb-gray-500 mb-2">
                         {isJapanese ? '問題点:' : 'Issues:'}
                       </p>
@@ -214,10 +214,10 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                 {/* After Card */}
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="relative"
+                  className="relative h-full"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-50 rounded-2xl blur-xl opacity-50" />
-                  <div className="relative bg-white rounded-2xl border-2 border-green-200 p-8 shadow-xl">
+                  <div className="relative bg-white rounded-2xl border-2 border-green-200 p-8 shadow-xl min-h-[500px] flex flex-col">
                     <div className="flex items-center justify-between mb-6">
                       <h3 className="text-2xl font-bold text-erb-navy flex items-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-500" />
@@ -232,7 +232,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                       {currentExample.after.content}
                     </div>
                     
-                    <div className="space-y-2">
+                    <div className="space-y-2 mt-auto">
                       <p className="text-sm font-medium text-erb-gray-500 mb-2">
                         {isJapanese ? '改善点:' : 'Improvements:'}
                       </p>

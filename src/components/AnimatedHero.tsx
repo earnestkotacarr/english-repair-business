@@ -21,7 +21,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
 
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-erb-blue-50 via-white to-erb-blue-50">
+    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-erb-blue-50 via-white to-erb-blue-50 py-12 lg:py-16">
       {/* Tech background image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -97,15 +97,15 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <span className="block">
-                  <span className="text-5xl sm:text-6xl lg:text-7xl text-black">{t('headlinePart1')}</span>
-                  <span className="text-2xl sm:text-3xl lg:text-4xl block mt-2 text-erb-gray-700">
+                  <span className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl text-black font-bold">{t('headlinePart1')}</span>
+                  <span className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl block mt-2 text-erb-gray-700">
                     {t('headlinePart2')}
                   </span>
                 </span>
               </motion.h1>
               
               <motion.p
-                className="mt-6 text-xl text-erb-gray-600 leading-relaxed"
+                className="mt-6 text-lg lg:text-xl text-erb-gray-600 leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
@@ -116,7 +116,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
 
             {/* CTA Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 pb-8 lg:pb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
@@ -194,11 +194,11 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             </div>
             
             {/* Professional Caption */}
-            <div className="mt-6 mb-12 text-center">
-              <p className="text-sm font-medium text-erb-navy">
+            <div className="mt-6 mb-8 lg:mb-12 text-center">
+              <p className="text-sm lg:text-base font-medium text-erb-navy">
                 Professional English Consultant
               </p>
-              <p className="text-xs text-erb-gray-600 mt-1 mb-8">
+              <p className="text-xs lg:text-sm text-erb-gray-600 mt-1 mb-4 lg:mb-8">
                 B2B Asian Market Specialist
               </p>
             </div>

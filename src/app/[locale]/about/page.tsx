@@ -85,12 +85,12 @@ export default function AboutPage() {
                     <h3 className="text-xl font-bold text-erb-navy mb-1 text-center">{member.name}</h3>
                     <p className="text-lg text-erb-blue-500 font-semibold mb-1 text-center">{member.role}</p>
                     <p className="text-sm text-erb-gray-600 mb-2 text-center">{member.experience}</p>
-                    <p className="text-sm font-medium text-erb-navy mb-4 text-center">{member.education}</p>
+                    <p className="text-sm font-medium text-erb-navy mb-6 text-center">{member.education}</p>
                     
-                    <p className="text-erb-gray-600 leading-relaxed mb-4 text-left">{member.bio}</p>
+                    <p className="text-erb-gray-600 leading-relaxed mb-6 text-left px-2 md:px-0">{member.bio}</p>
                     
                     {member.linkedin && (
-                      <div className="text-center">
+                      <div className="text-left">
                         <a 
                           href={member.linkedin}
                           target="_blank" 

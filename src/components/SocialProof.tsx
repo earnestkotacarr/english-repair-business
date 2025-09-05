@@ -117,15 +117,15 @@ export default function SocialProof({ locale }: { locale: string }) {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20"
+          className="flex justify-center gap-8 mb-20"
         >
           {trustBadges.map((badge, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 border-2 border-erb-gray-200 text-center"
+              className="flex items-center gap-2 text-erb-gray-600"
             >
-              <badge.icon className="w-8 h-8 text-erb-gray-600 mx-auto mb-3" />
-              <p className="text-sm font-medium text-erb-gray-700">{badge.label}</p>
+              <badge.icon className="w-5 h-5" />
+              <span className="text-sm font-medium">{badge.label}</span>
             </div>
           ))}
         </motion.div>
@@ -143,10 +143,10 @@ export default function SocialProof({ locale }: { locale: string }) {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5 + index * 0.1, duration: 0.6 }}
-              whileHover={{ y: -5 }}
-              className="bg-white rounded-xl pt-6 pb-8 px-8 shadow-lg border border-erb-gray-100 relative"
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="bg-white rounded-xl pt-4 pb-6 px-8 shadow-lg border border-erb-gray-100 relative"
             >
-              <Quote className="absolute top-6 right-6 w-8 h-8 text-erb-vermilion/20" />
+              <Quote className="absolute top-4 right-6 w-6 h-6 text-erb-vermilion/20" />
               
               
               {/* Quote */}

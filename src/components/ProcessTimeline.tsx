@@ -64,9 +64,9 @@ export default function ProcessTimeline() {
                     <div className="hidden md:block absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-erb-gray-200 to-erb-gray-200 z-0" />
                   )}
                   
-                  <div className="relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-erb-gray-100">
+                  <div className="relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 p-8 border border-erb-gray-100 min-h-[450px] md:min-h-[420px] flex flex-col">
                     {/* Step number */}
-                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-erb-navy to-erb-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                    <div className="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-erb-navy to-erb-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                       {index + 1}
                     </div>
                     
@@ -86,7 +86,7 @@ export default function ProcessTimeline() {
                     </p>
                     
                     {/* Details */}
-                    <ul className="space-y-2 mb-4">
+                    <ul className="space-y-2 mb-4 flex-grow">
                       {step.details.map((detail, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-sm text-erb-gray-500">
                           <svg className="w-4 h-4 text-erb-vermilion mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,8 +97,8 @@ export default function ProcessTimeline() {
                       ))}
                     </ul>
                     
-                    {/* Timeline */}
-                    <div className="pt-4 border-t border-erb-gray-100">
+                    {/* Timeline - Always at bottom */}
+                    <div className="pt-4 border-t border-erb-gray-100 mt-auto">
                       <span className="inline-flex items-center gap-1 text-xs text-erb-vermilion font-medium">
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
