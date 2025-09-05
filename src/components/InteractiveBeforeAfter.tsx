@@ -4,7 +4,7 @@ import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import * as Tabs from '@radix-ui/react-tabs'
-import { Code, FileText, Globe, ArrowRight, Download, CheckCircle, XCircle } from 'lucide-react'
+import { Code, FileText, Globe, ArrowRight, Download, CheckCircle, XCircle, Megaphone } from 'lucide-react'
 
 export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
   const t = useTranslations('results.beforeAfter')
@@ -81,6 +81,29 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
           isJapanese ? '具体的な利点' : 'Specific benefits',
           isJapanese ? '明確な時期' : 'Clear timeline',
           isJapanese ? '行動喚起' : 'Clear CTA'
+        ]
+      }
+    },
+    {
+      id: 'example4',
+      category: isJapanese ? 'マーケティング資料' : 'Marketing Materials',
+      icon: Megaphone,
+      before: {
+        title: isJapanese ? '改善前' : 'Before',
+        content: "Our solution is best in class and offers superior performance. Many customers are satisfied with our product.",
+        issues: [
+          isJapanese ? '根拠のない主張' : 'Unsupported claims',
+          isJapanese ? '汎用的すぎる' : 'Too generic',
+          isJapanese ? '証拠なし' : 'No evidence'
+        ]
+      },
+      after: {
+        title: isJapanese ? '改善後' : 'After',
+        content: "Our solution delivers 40% faster processing speeds than industry standards, as verified by independent testing labs. Join 200+ manufacturers who have reduced defect rates by an average of 25%.",
+        improvements: [
+          isJapanese ? '数値による裏付け' : 'Quantified results',
+          isJapanese ? '第三者検証' : 'Third-party validation',
+          isJapanese ? '実績の明示' : 'Clear track record'
         ]
       }
     }
@@ -260,7 +283,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-erb-navy font-medium rounded-xl border-2 border-erb-gray-200 hover:border-erb-navy/20 shadow-md hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-erb-gray-700 font-medium rounded-xl border-2 border-erb-gray-300 hover:border-erb-gray-400 hover:text-erb-navy transition-all"
             >
               <Download className="w-5 h-5" />
               {isJapanese ? 'ガイドをダウンロード' : 'Download Guide'}

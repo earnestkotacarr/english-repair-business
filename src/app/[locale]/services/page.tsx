@@ -71,37 +71,38 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
           {services.map((service) => (
             <div 
               key={service.id}
-              className={`bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
-                service.highlight ? 'ring-2 ring-erb-vermilion/30' : 'border border-erb-gray-100'
-              }`}
+              className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-erb-gray-100"
             >
               <div className="text-erb-vermilion mb-6">{service.icon}</div>
               <h2 className="text-2xl font-bold mb-3 text-erb-navy">{service.title}</h2>
               <p className="text-erb-gray-500 mb-4">{service.description}</p>
               
-              <div className="space-y-2 mb-6">
-                <div className="flex items-start">
-                  <span className="text-sm font-medium text-erb-navy w-20">Price:</span>
+              <div className="space-y-3 mb-6">
+                <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
+                  <span className="text-sm font-medium text-erb-navy">Price:</span>
                   <span className="text-sm text-erb-vermilion font-medium">{service.price}</span>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-sm font-medium text-erb-navy w-20">Timeline:</span>
+                <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
+                  <span className="text-sm font-medium text-erb-navy">Timeline:</span>
                   <span className="text-sm text-erb-gray-500">{service.timeline}</span>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-sm font-medium text-erb-navy w-20">Includes:</span>
+                <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
+                  <span className="text-sm font-medium text-erb-navy">Includes:</span>
                   <span className="text-sm text-erb-gray-500">{service.includes}</span>
                 </div>
               </div>
-              
-              <Link 
-                href={`/${locale}/contact`}
-                className="inline-block w-full text-center px-6 py-3 bg-erb-navy text-white font-medium rounded-md hover:bg-opacity-90 transition-all"
-              >
-                {locale === 'ja' ? 'お問い合わせ' : 'Get Started'}
-              </Link>
             </div>
           ))}
+        </div>
+        
+        {/* Single CTA button */}
+        <div className="text-center mt-12">
+          <Link 
+            href={`/${locale}/contact`}
+            className="inline-block px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
+          >
+            {locale === 'ja' ? '無料相談を予約する' : 'Get Started with Free Consultation'}
+          </Link>
         </div>
       </div>
     </div>

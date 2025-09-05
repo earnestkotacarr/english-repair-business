@@ -46,7 +46,7 @@ export default function ProcessTimeline() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-erb-gray-50">
+    <section className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-erb-navy mb-3">{t('title')}</h2>
@@ -64,9 +64,9 @@ export default function ProcessTimeline() {
                     <div className="hidden md:block absolute top-16 left-1/2 w-full h-0.5 bg-gradient-to-r from-erb-gray-200 to-erb-gray-200 z-0" />
                   )}
                   
-                  <div className="relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-erb-gray-100">
+                  <div className="relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-erb-gray-100">
                     {/* Step number */}
-                    <div className="absolute -top-3 -left-3 w-8 h-8 bg-erb-navy text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-erb-navy to-erb-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                       {index + 1}
                     </div>
                     

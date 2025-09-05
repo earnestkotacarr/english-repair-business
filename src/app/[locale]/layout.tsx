@@ -6,6 +6,7 @@ import { getMessages } from 'next-intl/server'
 import { locales } from '@/i18n'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ScrollPositionManager from '@/components/ScrollPositionManager'
 import { Toaster } from 'react-hot-toast'
 import '../globals.css'
 
@@ -39,6 +40,7 @@ export default async function LocaleLayout({
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col bg-erb-gray-50`}>
         <NextIntlClientProvider messages={messages}>
+          <ScrollPositionManager />
           <Header locale={locale} />
           <main className="flex-1">
             {children}

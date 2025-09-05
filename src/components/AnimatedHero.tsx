@@ -13,7 +13,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
   const { scrollY } = useScroll()
   const y1 = useTransform(scrollY, [0, 300], [0, 50])
   const y2 = useTransform(scrollY, [0, 300], [0, -50])
-  const opacity = useTransform(scrollY, [0, 300], [1, 0.3])
+  const opacity = useTransform(scrollY, [200, 500], [1, 0.3])
 
   useEffect(() => {
     setMounted(true)
@@ -91,13 +91,16 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             {/* Main Headline with Typed Effect */}
             <div>
               <motion.h1
-                className="text-5xl lg:text-6xl font-bold leading-tight text-erb-navy"
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-erb-navy"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                <span className="block bg-gradient-to-r from-erb-navy to-erb-navy/70 bg-clip-text text-transparent">
-                  {t('headline')}
+                <span className="block">
+                  <span className="text-5xl sm:text-6xl lg:text-7xl bg-gradient-to-r from-erb-navy to-erb-navy/70 bg-clip-text text-transparent">Professional English</span>
+                  <span className="text-2xl sm:text-3xl lg:text-4xl block mt-2 text-erb-gray-700">
+                    that preserves Japanese nuance and technical accuracy.
+                  </span>
                 </span>
               </motion.h1>
               
@@ -122,7 +125,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group px-8 py-4 bg-gradient-to-r from-erb-blue-500 to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
+                  className="group px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
                 >
                   {t('cta')}
                 </motion.button>
@@ -132,7 +135,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-erb-navy font-medium rounded-xl border-2 border-erb-gray-200 hover:border-erb-navy/20 shadow-md hover:shadow-lg transition-all"
+                  className="px-8 py-4 bg-erb-blue-500 text-white font-medium rounded-xl shadow-md hover:shadow-lg hover:bg-erb-blue-600 transition-all"
                 >
                   {locale === 'ja' ? 'サービス詳細' : 'View Services'}
                 </motion.button>
@@ -191,11 +194,11 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             </div>
             
             {/* Professional Caption */}
-            <div className="mt-6 text-center">
+            <div className="mt-6 mb-12 text-center">
               <p className="text-sm font-medium text-erb-navy">
                 Professional English Consultant
               </p>
-              <p className="text-xs text-erb-gray-600 mt-1">
+              <p className="text-xs text-erb-gray-600 mt-1 mb-8">
                 B2B Asian Market Specialist
               </p>
             </div>

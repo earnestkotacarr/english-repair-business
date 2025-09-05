@@ -83,7 +83,7 @@ export default function SocialProof({ locale }: { locale: string }) {
             {isJapanese ? '導入企業例' : 'Trusted By'}
           </p>
           
-          <div className="relative">
+          <div className="relative py-6">
             <div className="flex overflow-hidden">
               <motion.div
                 className="flex gap-12 items-center"
@@ -109,10 +109,6 @@ export default function SocialProof({ locale }: { locale: string }) {
                 ))}
               </motion.div>
             </div>
-            
-            {/* Gradient Overlays */}
-            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-erb-gray-50 to-transparent pointer-events-none" />
-            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-erb-gray-50 to-transparent pointer-events-none" />
           </div>
         </motion.div>
 
@@ -124,14 +120,13 @@ export default function SocialProof({ locale }: { locale: string }) {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20"
         >
           {trustBadges.map((badge, index) => (
-            <motion.div
+            <div
               key={index}
-              whileHover={{ scale: 1.05 }}
-              className="bg-white rounded-xl p-6 shadow-md border border-erb-gray-100 text-center"
+              className="bg-white rounded-xl p-6 border-2 border-erb-gray-200 text-center"
             >
-              <badge.icon className="w-8 h-8 text-erb-vermilion mx-auto mb-3" />
-              <p className="text-sm font-medium text-erb-navy">{badge.label}</p>
-            </motion.div>
+              <badge.icon className="w-8 h-8 text-erb-gray-600 mx-auto mb-3" />
+              <p className="text-sm font-medium text-erb-gray-700">{badge.label}</p>
+            </div>
           ))}
         </motion.div>
 
@@ -149,7 +144,7 @@ export default function SocialProof({ locale }: { locale: string }) {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.5 + index * 0.1, duration: 0.6 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-xl p-8 shadow-lg border border-erb-gray-100 relative"
+              className="bg-white rounded-xl pt-6 pb-8 px-8 shadow-lg border border-erb-gray-100 relative"
             >
               <Quote className="absolute top-6 right-6 w-8 h-8 text-erb-vermilion/20" />
               
