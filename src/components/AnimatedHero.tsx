@@ -97,7 +97,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <span className="block">
-                  <span className="text-5xl sm:text-6xl lg:text-7xl text-erb-navy">Professional English</span>
+                  <span className="text-5xl sm:text-6xl lg:text-7xl text-black">Professional English</span>
                   <span className="text-2xl sm:text-3xl lg:text-4xl block mt-2 text-erb-gray-700">
                     that preserves Japanese nuance and technical accuracy.
                   </span>
