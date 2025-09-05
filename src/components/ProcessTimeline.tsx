@@ -46,7 +46,7 @@ export default function ProcessTimeline() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-b from-erb-vermilion/5 to-white">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-erb-navy mb-3">{t('title')}</h2>
