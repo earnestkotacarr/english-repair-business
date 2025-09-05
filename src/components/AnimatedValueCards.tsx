@@ -50,7 +50,7 @@ export default function AnimatedValueCards() {
   }
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section ref={ref} className="py-20 bg-gradient-to-b from-white to-gray-100 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.03)_0%,transparent_50%)]" />

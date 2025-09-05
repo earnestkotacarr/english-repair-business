@@ -53,7 +53,7 @@ export default function SocialProof({ locale }: { locale: string }) {
   ]
 
   return (
-    <section ref={ref} className="py-24 bg-gradient-to-b from-blue-50 to-red-50 overflow-hidden">
+    <section ref={ref} className="py-24 bg-gradient-to-b from-blue-100 to-red-100 overflow-hidden">
       <div className="container">
         {/* Section Header */}
         <motion.div

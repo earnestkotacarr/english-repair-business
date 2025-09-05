@@ -112,7 +112,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
   const currentExample = examples.find(e => e.id === activeTab) || examples[0]
 
   return (
-    <section ref={ref} className="py-24 bg-gradient-to-b from-gray-50 to-blue-50">
+    <section ref={ref} className="py-24 bg-gradient-to-b from-gray-100 to-blue-100">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
