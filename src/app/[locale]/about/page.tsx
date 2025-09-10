@@ -62,7 +62,11 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                         <img 
                           src={member.image}
                           alt={member.name}
-                          className="w-full h-full object-cover"
+                          className={`w-full h-full object-cover ${
+                            member.image === '/Riley_about.jpg' 
+                              ? 'scale-150 object-top' 
+                              : ''
+                          }`}
                           onError={(e) => {
                             const target = e.target as HTMLImageElement
                             if (member.fallbackImage && member.image !== member.fallbackImage) {
