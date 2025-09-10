@@ -7,12 +7,12 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
   return (
     <svg 
       className={className}
-      viewBox="0 0 220 45" 
+      viewBox="0 0 220 50" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* New Hammer icon - styled like the provided image */}
-      <g transform="translate(5, 8) scale(0.12)">
+      <g transform="translate(5, 12) scale(0.12)">
         {/* Hammer head -->
         <path d="M 40 80 C 40 70, 50 60, 70 60 L 140 60 L 150 70 L 160 70 C 165 70, 170 75, 170 80 L 170 90 C 170 95, 165 100, 160 100 L 150 100 L 140 110 L 70 110 C 50 110, 40 100, 40 90 Z" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
         
@@ -49,7 +49,7 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
       {/* English Repair with Care text - much larger */}
       <text 
         x="42" 
-        y="20" 
+        y="24" 
         className="fill-erb-navy font-bold"
         style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '20px', letterSpacing: '-0.5px' }}
       >
@@ -57,7 +57,7 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
       </text>
       <text 
         x="42" 
-        y="35" 
+        y="39" 
         className="fill-erb-vermilion font-medium italic"
         style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '16px' }}
       >
