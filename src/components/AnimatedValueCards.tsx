@@ -22,7 +22,7 @@ export default function AnimatedValueCards() {
       icon: BookOpen,
       title: t('item2.title'),
       description: t('item2.description'),
-      gradient: 'from-erb-vermilion to-red-600',
+      gradient: 'from-erb-primary to-erb-blue-600',
       delay: 0.1
     },
     {
@@ -76,7 +76,7 @@ export default function AnimatedValueCards() {
           <h2 className="text-4xl font-bold text-erb-navy mb-4">{t('title')}</h2>
           
           <motion.div
-            className="w-24 h-1 bg-gradient-to-r from-erb-vermilion to-red-600 mx-auto rounded-full"
+            className="w-24 h-1 bg-gradient-to-r from-erb-primary to-erb-blue-600 mx-auto rounded-full"
             initial={{ width: 0 }}
             animate={isInView ? { width: 96 } : {}}
             transition={{ delay: 0.3, duration: 0.6 }}
@@ -141,7 +141,7 @@ export default function AnimatedValueCards() {
                     </motion.div>
                     
                     {/* Content */}
-                    <h3 className="text-xl font-semibold mb-3 text-erb-navy group-hover:text-erb-vermilion transition-colors duration-300">
+                    <h3 className="text-xl font-semibold mb-3 text-erb-navy group-hover:text-erb-primary transition-colors duration-300">
                       {value.title}
                     </h3>
                     

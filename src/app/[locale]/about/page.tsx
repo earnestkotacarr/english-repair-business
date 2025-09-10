@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function AboutPage() {
+export default function AboutPage({ params: { locale } }: { params: { locale: string } }) {
   const t = useTranslations('about')
 
   const teamMembers = [
@@ -36,7 +36,7 @@ export default function AboutPage() {
       <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
         <Image
           src="/images/tech-hero.jpg"
-          alt="Technology background"
+          alt={t('altTechBackground')}
           fill
           className="object-cover"
           priority
@@ -100,7 +100,7 @@ export default function AboutPage() {
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
-                          <span className="text-sm">LinkedIn Profile</span>
+                          <span className="text-sm">{t('linkedinProfile')}</span>
                         </a>
                       </div>
                     )}
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-erb-navy mb-3">Our Collaborative Approach</h3>
+                <h3 className="text-xl font-bold text-erb-navy mb-3">{t('collaborativeApproach')}</h3>
                 <p className="text-erb-gray-600 leading-relaxed">{t('approach')}</p>
               </div>
             </div>
@@ -130,10 +130,10 @@ export default function AboutPage() {
           {/* Visual Enhancement - Tech Images */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: '/images/semiconductor.jpg', alt: 'Semiconductor technology' },
-              { src: '/images/manufacturing.jpg', alt: 'Manufacturing excellence' },
-              { src: '/images/collaboration.jpg', alt: 'Team collaboration' },
-              { src: '/images/quality-process.jpg', alt: 'Quality process' }
+              { src: '/images/semiconductor.jpg', alt: t('altSemiconductor') },
+              { src: '/images/manufacturing.jpg', alt: t('altManufacturing') },
+              { src: '/images/collaboration.jpg', alt: t('altCollaboration') },
+              { src: '/images/quality-process.jpg', alt: t('altQualityProcess') }
             ].map((image, index) => (
               <div key={index} className="relative h-32 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all">
                 <Image
@@ -149,13 +149,13 @@ export default function AboutPage() {
           
           {/* Contact CTA */}
           <div className="text-center mt-16">
-            <h3 className="text-2xl font-bold text-erb-navy mb-4">Ready to Get Started?</h3>
-            <p className="text-erb-gray-600 mb-6">Let&apos;s discuss how we can help improve your English content.</p>
+            <h3 className="text-2xl font-bold text-erb-navy mb-4">{t('readyToGetStarted')}</h3>
+            <p className="text-erb-gray-600 mb-6">{t('letsDiscuss')}</p>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="inline-block px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
             >
-              Contact Us Today
+              {t('contactUsToday')}
             </Link>
           </div>
         </div>

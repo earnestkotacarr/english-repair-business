@@ -8,11 +8,18 @@
     "contact": "Contact"
   },
   "hero": {
+    "badge": "Specialized for Japanese B2B",
     "headline": "Professional English that preserves Japanese nuance and technical accuracy.",
     "headlinePart1": "Professional English",
     "headlinePart2": "that preserves Japanese nuance and technical accuracy.",
+    "headline_mobile": "Professional English",
     "subheadline": "Full-scale improvement of technical content and media — capturing nuance with clarity and impact.",
-    "cta": "Request Free 1-Page Mini Audit"
+    "subheadline_mobile": "Technical content and media improvement",
+    "cta": "Request Free 1-Page Mini Audit",
+    "viewServices": "View Services",
+    "captionTitle": "Professional English Consultant",
+    "captionSubtitle": "B2B Asian Market Specialist",
+    "altFounderImage": "Riley Eusden - English Repair"
   },
   "values": {
     "title": "Why Industry Leaders Choose Us",
@@ -136,7 +143,17 @@
     "colleagueExperience": "Technical Writer | Japan Market Specialist",
     "colleagueEducation": "Inbound PhD Candidate, University of Tokyo | Engineer",
     "colleagueBio": "Bringing deep technical expertise and cultural insight, I ensure your content maintains accuracy while resonating with both Japanese and international audiences.",
-    "approach": "Our collaborative approach combines native English excellence with technical precision and deep Japan market understanding. Together, we transform your technical content into powerful business communications that maintain the accuracy your products embody while driving international engagement."
+    "approach": "Our collaborative approach combines native English excellence with technical precision and deep Japan market understanding. Together, we transform your technical content into powerful business communications that maintain the accuracy your products embody while driving international engagement.",
+    "collaborativeApproach": "Our Collaborative Approach",
+    "readyToGetStarted": "Ready to Get Started?",
+    "letsDiscuss": "Let's discuss how we can help improve your English content.",
+    "contactUsToday": "Contact Us Today",
+    "linkedinProfile": "LinkedIn Profile",
+    "altTechBackground": "Technology background",
+    "altSemiconductor": "Semiconductor technology",
+    "altManufacturing": "Manufacturing excellence",
+    "altCollaboration": "Team collaboration",
+    "altQualityProcess": "Quality process"
   },
   "contact": {
     "title": "Contact",
@@ -154,8 +171,10 @@
   "footer": {
     "company": "English Repair",
     "tagline": "Technical English Renovation",
+    "quickLinks": "Quick Links",
+    "businessInfo": "Business Info",
     "privacy": "Privacy Policy",
     "legal": "Legal",
-    "copyright": "© 2024 English Repair. All rights reserved."
+    "copyright": "© {year} English Repair. All rights reserved."
   }
 }

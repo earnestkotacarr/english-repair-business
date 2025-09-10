@@ -180,7 +180,7 @@ export default function SocialProof({ locale }: { locale: string }) {
             href={`/${locale}/contact`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-erb-primary to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             {isJapanese ? '無料相談を予約' : 'Schedule Free Consultation'}
           </motion.a>

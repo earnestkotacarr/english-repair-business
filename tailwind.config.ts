@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         'erb-navy': '#0F172A',
-        'erb-vermilion': '#2563EB',
+        'erb-primary': '#2563EB',  // Primary blue color
+        'erb-vermilion': '#DC2626',  // True vermilion/red color
         'erb-blue': {
           600: '#1E40AF',
           500: '#2563EB',

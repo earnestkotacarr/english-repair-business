@@ -8,11 +8,18 @@
     "contact": "お問い合わせ"
   },
   "hero": {
+    "badge": "日本のB2B企業に特化",
     "headline": "日本語のニュアンスと技術的精度を保つプロフェッショナルな英語。",
     "headlinePart1": "プロフェッショナルな英語",
     "headlinePart2": "日本語のニュアンスと技術的精度を保つ。",
+    "headline_mobile": "プロフェッショナルな英語",
     "subheadline": "技術コンテンツとメディアの全面的な改善 — ニュアンスを捉えた明瞭さとインパクトのある表現へ。",
-    "cta": "無料1ページミニ監査を依頼"
+    "subheadline_mobile": "技術コンテンツとメディアの改善",
+    "cta": "無料1ページミニ監査を依頼",
+    "viewServices": "サービス詳細",
+    "captionTitle": "プロフェッショナル英語コンサルタント",
+    "captionSubtitle": "B2Bアジア市場スペシャリスト",
+    "altFounderImage": "Riley Eusden - English Repair"
   },
   "values": {
     "title": "業界リーダーが私たちを選ぶ理由",
@@ -136,7 +143,17 @@
     "colleagueExperience": "テクニカルライター｜日本市場スペシャリスト",
     "colleagueEducation": "東京大学博士課程｜エンジニア",
     "colleagueBio": "深い技術的専門知識と文化的洞察力を活かし、お客様のコンテンツが日本と国際的な両方のオーディエンスに響きながら正確性を維持することを保証します。",
-    "approach": "私たちの協働アプローチは、ネイティブ英語の卓越性と技術的精密さ、そして深い日本市場の理解を組み合わせています。共に、お客様の技術コンテンツを、製品が体現する精度を保ちながら国際的なエンゲージメントを促進する強力なビジネスコミュニケーションへと変革します。"
+    "approach": "私たちの協働アプローチは、ネイティブ英語の卓越性と技術的精密さ、そして深い日本市場の理解を組み合わせています。共に、お客様の技術コンテンツを、製品が体現する精度を保ちながら国際的なエンゲージメントを促進する強力なビジネスコミュニケーションへと変革します。",
+    "collaborativeApproach": "私たちの協働アプローチ",
+    "readyToGetStarted": "始める準備はできましたか？",
+    "letsDiscuss": "英語コンテンツの改善についてお話ししましょう。",
+    "contactUsToday": "今すぐお問い合わせ",
+    "linkedinProfile": "LinkedInプロフィール",
+    "altTechBackground": "技術背景",
+    "altSemiconductor": "半導体技術",
+    "altManufacturing": "製造の卓越性",
+    "altCollaboration": "チームコラボレーション",
+    "altQualityProcess": "品質プロセス"
   },
   "contact": {
     "title": "お問い合わせ",
@@ -154,8 +171,10 @@
   "footer": {
     "company": "English Repair",
     "tagline": "技術英語のリノベーション",
+    "quickLinks": "クイックリンク",
+    "businessInfo": "事業情報",
     "privacy": "プライバシーポリシー",
     "legal": "特定商取引法に基づく表記",
-    "copyright": "© 2024 English Repair. All rights reserved."
+    "copyright": "© {year} English Repair. All rights reserved."
   }
 }

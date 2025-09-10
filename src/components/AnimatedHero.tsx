@@ -85,7 +85,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               className="inline-flex items-center gap-2 px-4 py-2 bg-erb-blue-500/10 text-erb-blue-600 rounded-full text-sm font-medium mt-4"
             >
               <CheckCircle className="w-4 h-4" />
-              {locale === 'ja' ? '日本のB2B企業に特化' : 'Specialized for Japanese B2B'}
+              {t('badge')}
             </motion.div>
 
             {/* Main Headline with Typed Effect */}
@@ -97,20 +97,26 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
                 <span className="block">
-                  <span className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl text-black font-bold">{t('headlinePart1')}</span>
-                  <span className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl block mt-2 text-erb-gray-700">
+                  {/* Mobile headline */}
+                  <span className="block sm:hidden text-4xl text-black font-bold">{t('headline_mobile')}</span>
+                  {/* Desktop headline */}
+                  <span className="hidden sm:block text-5xl lg:text-5xl xl:text-6xl text-black font-bold">{t('headlinePart1')}</span>
+                  <span className="hidden sm:block text-xl sm:text-2xl lg:text-2xl xl:text-3xl mt-2 text-erb-gray-700">
                     {t('headlinePart2')}
                   </span>
                 </span>
               </motion.h1>
               
               <motion.p
-                className="mt-6 text-lg lg:text-xl text-erb-gray-600 leading-relaxed"
+                className="mt-6 text-erb-gray-600 leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                {t('subheadline')}
+                {/* Mobile subheadline */}
+                <span className="block sm:hidden text-base line-clamp-3">{t('subheadline_mobile')}</span>
+                {/* Desktop subheadline */}
+                <span className="hidden sm:block text-lg lg:text-xl">{t('subheadline')}</span>
               </motion.p>
             </div>
 
@@ -125,7 +131,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
+                  className="group px-8 py-4 bg-gradient-to-r from-erb-primary to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-3"
                 >
                   {t('cta')}
                 </motion.button>
@@ -137,7 +143,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-erb-blue-500 text-white font-medium rounded-xl shadow-md hover:shadow-lg hover:bg-erb-blue-600 transition-all"
                 >
-                  {locale === 'ja' ? 'サービス詳細' : 'View Services'}
+                  {t('viewServices')}
                 </motion.button>
               </Link>
             </motion.div>
@@ -156,7 +162,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <div className="aspect-square bg-white">
                   <Image
                     src="/founder.jpg"
-                    alt="Riley Eusden - English Repair"
+                    alt={t('altFounderImage')}
                     width={600}
                     height={600}
                     className="w-full h-full object-cover"
@@ -196,10 +202,10 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             {/* Professional Caption */}
             <div className="mt-6 mb-8 lg:mb-12 text-center">
               <p className="text-sm lg:text-base font-medium text-erb-navy">
-                Professional English Consultant
+                {t('captionTitle')}
               </p>
               <p className="text-xs lg:text-sm text-erb-gray-600 mt-1 mb-4 lg:mb-8">
-                B2B Asian Market Specialist
+                {t('captionSubtitle')}
               </p>
             </div>
           </motion.div>

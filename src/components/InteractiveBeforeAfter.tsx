@@ -147,8 +147,8 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                     className={`
                       flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all
                       ${activeTab === example.id 
-                        ? 'bg-erb-vermilion text-white shadow-lg scale-105' 
-                        : 'bg-white text-erb-gray-600 border border-erb-gray-200 hover:border-erb-vermilion/30 hover:shadow-md'
+                        ? 'bg-erb-primary text-white shadow-lg scale-105' 
+                        : 'bg-white text-erb-gray-600 border border-erb-gray-200 hover:border-erb-primary/30 hover:shadow-md'
                       }
                     `}
                   >
@@ -274,7 +274,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
               href={`/${locale}/contact`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-erb-primary to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
             >
               {isJapanese ? '無料サンプルを依頼' : 'Request Free Sample'}
               <ArrowRight className="w-5 h-5" />

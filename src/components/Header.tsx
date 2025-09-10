@@ -35,7 +35,7 @@ export default function Header({ locale }: { locale: string }) {
         <div className="container">
           <div className="flex items-center justify-between h-20">
             <Link href={`/${locale}`} className="flex items-center">
-              <ENRLogo className="h-12 md:h-14" />
+              <ENRLogo className="h-12 md:h-14" locale={locale} />
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
@@ -43,9 +43,9 @@ export default function Header({ locale }: { locale: string }) {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-sm font-medium transition-all hover:text-erb-vermilion relative ${
-                    pathname === item.href ? 'text-erb-vermilion' : 'text-erb-navy'
-                  } after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-erb-vermilion after:transform after:origin-left after:transition-transform ${
+                  className={`text-sm font-medium transition-all hover:text-erb-primary relative ${
+                    pathname === item.href ? 'text-erb-primary' : 'text-erb-navy'
+                  } after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-erb-primary after:transform after:origin-left after:transition-transform ${
                     pathname === item.href ? 'after:scale-x-100' : 'after:scale-x-0 hover:after:scale-x-100'
                   }`}
                 >
@@ -57,7 +57,7 @@ export default function Header({ locale }: { locale: string }) {
             <div className="flex items-center space-x-4">
               <LocaleSwitcher locale={locale} />
               <button 
-                className="md:hidden p-2 text-erb-navy hover:text-erb-vermilion transition-colors"
+                className="md:hidden p-2 text-erb-navy hover:text-erb-primary transition-colors"
                 onClick={toggleMobileMenu}
                 aria-label="Toggle menu"
               >
@@ -109,8 +109,8 @@ export default function Header({ locale }: { locale: string }) {
                 onClick={closeMobileMenu}
                 className={`block py-3 px-4 text-base font-medium rounded-lg transition-all ${
                   pathname === item.href 
-                    ? 'bg-erb-vermilion/10 text-erb-vermilion' 
-                    : 'text-erb-navy hover:bg-erb-gray-50 hover:text-erb-vermilion'
+                    ? 'bg-erb-primary/10 text-erb-primary' 
+                    : 'text-erb-navy hover:bg-erb-gray-50 hover:text-erb-primary'
                 }`}
               >
                 {item.label}

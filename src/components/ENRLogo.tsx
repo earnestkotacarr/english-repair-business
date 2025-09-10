@@ -1,8 +1,9 @@
 interface ENRLogoProps {
   className?: string
+  locale?: string
 }
 
-export default function ENRLogo({ className = "h-12" }: ENRLogoProps) {
+export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoProps) {
   return (
     <svg 
       className={className}
@@ -60,7 +61,7 @@ export default function ENRLogo({ className = "h-12" }: ENRLogoProps) {
         className="fill-erb-vermilion font-medium italic"
         style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '16px' }}
       >
-        with Care
+        {locale === 'ja' ? 'ともに' : 'with Care'}
       </text>
     </svg>
   )
