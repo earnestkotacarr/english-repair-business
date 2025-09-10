@@ -98,7 +98,10 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               >
                 <span className="block">
                   {/* Mobile headline */}
-                  <span className="block sm:hidden text-4xl text-black font-bold">{t('headline_mobile')}</span>
+                  <span className="block sm:hidden">
+                    <span className="block text-3xl text-black font-bold">{t('headlinePart1')}</span>
+                    <span className="block text-lg mt-2 text-erb-gray-700">{t('headlinePart2')}</span>
+                  </span>
                   {/* Desktop headline */}
                   <span className="hidden sm:block text-5xl lg:text-5xl xl:text-6xl text-black font-bold">{t('headlinePart1')}</span>
                   <span className="hidden sm:block text-xl sm:text-2xl lg:text-2xl xl:text-3xl mt-2 text-erb-gray-700">
@@ -114,7 +117,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
                 {/* Mobile subheadline */}
-                <span className="block sm:hidden text-base line-clamp-3">{t('subheadline_mobile')}</span>
+                <span className="block sm:hidden text-base">{t('subheadline_mobile')}</span>
                 {/* Desktop subheadline */}
                 <span className="hidden sm:block text-lg lg:text-xl">{t('subheadline')}</span>
               </motion.p>
