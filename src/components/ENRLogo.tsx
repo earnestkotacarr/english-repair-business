@@ -58,7 +58,7 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
       <text 
         x="42" 
         y="47" 
-        className="fill-erb-vermilion font-medium italic"
+        className="fill-erb-primary font-medium italic"
         style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '16px' }}
       >
         {locale === 'ja' ? 'ともに' : 'with Care'}

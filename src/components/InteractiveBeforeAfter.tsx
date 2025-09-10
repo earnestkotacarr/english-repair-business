@@ -4,7 +4,7 @@ import { useState, useRef } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import * as Tabs from '@radix-ui/react-tabs'
-import { Code, FileText, Globe, ArrowRight, Download, CheckCircle, XCircle, Megaphone } from 'lucide-react'
+import { Code, FileText, Globe, ArrowRight, CheckCircle, XCircle, Megaphone } from 'lucide-react'
 
 export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
   const t = useTranslations('results.beforeAfter')
@@ -269,26 +269,15 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
               ? 'あなたのコンテンツも、このように生まれ変わります'
               : 'Your content can be transformed just like this'}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.a
-              href={`/${locale}/contact`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-erb-primary to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
-            >
-              {isJapanese ? '無料サンプルを依頼' : 'Request Free Sample'}
-              <ArrowRight className="w-5 h-5" />
-            </motion.a>
-            
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-erb-gray-700 font-medium rounded-xl border-2 border-erb-gray-300 hover:border-erb-gray-400 hover:text-erb-navy transition-all"
-            >
-              <Download className="w-5 h-5" />
-              {isJapanese ? 'ガイドをダウンロード' : 'Download Guide'}
-            </motion.button>
-          </div>
+          <motion.a
+            href={`/${locale}/contact`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-erb-primary to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
+          >
+            {isJapanese ? '無料サンプルを依頼' : 'Request Free Sample'}
+            <ArrowRight className="w-5 h-5" />
+          </motion.a>
         </motion.div>
       </div>
     </section>

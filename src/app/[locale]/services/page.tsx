@@ -73,14 +73,14 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
               key={service.id}
               className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-erb-gray-100"
             >
-              <div className="text-erb-vermilion mb-6">{service.icon}</div>
+              <div className="text-erb-primary mb-6">{service.icon}</div>
               <h2 className="text-2xl font-bold mb-3 text-erb-navy">{service.title}</h2>
               <p className="text-erb-gray-500 mb-4">{service.description}</p>
               
               <div className="space-y-3 mb-6">
                 <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
                   <span className="text-sm font-medium text-erb-navy">Price:</span>
-                  <span className="text-sm text-erb-vermilion font-medium">{service.price}</span>
+                  <span className="text-sm text-erb-primary font-medium">{service.price}</span>
                 </div>
                 <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
                   <span className="text-sm font-medium text-erb-navy">Timeline:</span>
@@ -99,7 +99,7 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
         <div className="text-center mt-12">
           <Link 
             href={`/${locale}/contact`}
-            className="inline-block px-8 py-4 bg-gradient-to-r from-erb-vermilion to-red-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
+            className="inline-block px-8 py-4 bg-gradient-to-r from-erb-primary to-erb-blue-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             {locale === 'ja' ? '無料相談を予約する' : 'Get Started with Free Consultation'}
           </Link>
