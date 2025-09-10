@@ -14,7 +14,7 @@ export default function AboutPage() {
       experience: t('founderExperience'),
       education: t('founderEducation'),
       bio: t('founderBio'),
-      image: '/riley-new.jpg',
+      image: '/Riley_about.jpg',
       fallbackImage: '/founder.jpg',
       linkedin: 'https://www.linkedin.com/in/riley-eusden-36614b83/'
     },
