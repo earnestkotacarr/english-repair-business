@@ -21,7 +21,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       icon: Globe,
       before: {
         title: isJapanese ? '改善前' : 'Before',
-        content: "Our company is engaged in manufacturing of semiconductor equipment. We have unique technology and provide high-quality products.",
+        content: "Our company is doing the manufacture for semiconductor equipment. We have the special technology like lithography machine, and the product make faster process and also less defect than normal system.",
         issues: [
           isJapanese ? '曖昧な表現' : 'Vague expressions',
           isJapanese ? '具体性の欠如' : 'Lack of specificity',
@@ -30,7 +30,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       },
       after: {
         title: isJapanese ? '改善後' : 'After',
-        content: "We develop advanced lithography systems for semiconductor manufacturing, with improved throughput and reduced defect rates compared to conventional systems.",
+        content: "Our company manufactures semiconductor equipment, including advanced lithography systems that enable faster processing and fewer defects than conventional systems.",
         improvements: [
           isJapanese ? '具体的な説明' : 'Specific description',
           isJapanese ? '技術的優位性' : 'Technical advantages',
@@ -44,7 +44,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       icon: FileText,
       before: {
         title: isJapanese ? '改善前' : 'Before',
-        content: "The measurement accuracy is very high and the device operates in various conditions. It has good reliability.",
+        content: "The measurement accuracy is ±0.001mm and the device can operate under many conditions. It shows high reliability for long-time operation.",
         issues: [
           isJapanese ? '定量化不足' : 'Lack of quantification',
           isJapanese ? '曖昧な形容詞' : 'Ambiguous adjectives',
@@ -67,7 +67,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       icon: Code,
       before: {
         title: isJapanese ? '改善前' : 'Before',
-        content: "We are pleased to announce our new product. It has many innovative features and will contribute to customer success.",
+        content: "We are happy to announce the new product from our company. It is AI defect detection system, which can reduce semiconductor inspection time about 30% and still keep the high accuracy level. The release is scheduled Q2 2024. Please see detail in our homepage.",
         issues: [
           isJapanese ? '抽象的すぎる' : 'Too abstract',
           isJapanese ? 'ニュース性なし' : 'Lacks newsworthiness',
@@ -76,7 +76,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       },
       after: {
         title: isJapanese ? '改善後' : 'After',
-        content: "Tokyo—XYZ Corp introduces an AI-powered defect detection system that significantly reduces semiconductor inspection time while maintaining high accuracy levels. Available Q2 2024. Learn more at our website.",
+        content: "Tokyo—Nihon Microsystems introduces an AI-powered defect detection system that reduces semiconductor inspection time by approximately 30% while maintaining high accuracy. Available in Q2 2024. Learn more on our website.",
         improvements: [
           isJapanese ? '具体的な利点' : 'Specific benefits',
           isJapanese ? '明確な時期' : 'Clear timeline',
