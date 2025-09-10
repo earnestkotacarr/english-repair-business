@@ -90,7 +90,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       icon: Megaphone,
       before: {
         title: isJapanese ? '改善前' : 'Before',
-        content: "Our solution is best in class and offers superior performance. Many customers are satisfied with our product.",
+        content: "Our solution is best in class and shows superior performance. Independent testing has confirmed about 40% faster processing speed compared with industry standard. More than 200 manufacturers already are using, and defect rate is reduced by average 25%. Customers are very satisfied with our product.",
         issues: [
           isJapanese ? '根拠のない主張' : 'Unsupported claims',
           isJapanese ? '汎用的すぎる' : 'Too generic',
@@ -99,7 +99,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
       },
       after: {
         title: isJapanese ? '改善後' : 'After',
-        content: "Our solution delivers 40% faster processing speeds than industry standards, as verified by independent testing labs. Join 200+ manufacturers who have reduced defect rates by an average of 25%.",
+        content: "Our solution provides 40% faster processing speeds than industry standards, as confirmed by independent testing labs. More than 200 manufacturers currently use it to reduce defect rates by an average of 25%.",
         improvements: [
           isJapanese ? '数値による裏付け' : 'Quantified results',
           isJapanese ? '第三者検証' : 'Third-party validation',
