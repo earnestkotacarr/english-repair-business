@@ -2,36 +2,63 @@ interface ENRLogoProps {
   className?: string
 }
 
-export default function ENRLogo({ className = "h-10" }: ENRLogoProps) {
+export default function ENRLogo({ className = "h-12" }: ENRLogoProps) {
   return (
     <svg 
       className={className}
-      viewBox="0 0 180 40" 
+      viewBox="0 0 220 45" 
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Better Hammer icon */}
-      <g className="fill-erb-vermilion">
-        {/* Hammer head (more realistic shape) */}
-        <path d="M 6 14 L 24 14 L 24 10 L 26 10 L 26 20 L 24 20 L 24 16 L 6 16 Z" />
-        {/* Hammer handle */}
-        <rect x="11" y="15" width="4" height="14" rx="1" />
+      {/* New Hammer icon - styled like the provided image */}
+      <g transform="translate(5, 8) scale(0.12)">
+        {/* Hammer head -->
+        <path d="M 40 80 C 40 70, 50 60, 70 60 L 140 60 L 150 70 L 160 70 C 165 70, 170 75, 170 80 L 170 90 C 170 95, 165 100, 160 100 L 150 100 L 140 110 L 70 110 C 50 110, 40 100, 40 90 Z" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
+        
+        {/* Hammer claw */}
+        <path d="M 40 80 C 35 75, 30 70, 25 68 C 20 66, 18 68, 20 72 C 25 80, 35 85, 40 90" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
+        
+        {/* Wooden handle */}
+        <rect x="85" y="100" width="30" height="140" fill="#c8812a" stroke="#000" strokeWidth="3" rx="2"/>
+        
+        {/* Wood grain lines */}
+        <line x1="90" y1="110" x2="90" y2="230" stroke="#a66d1f" strokeWidth="1"/>
+        <line x1="95" y1="105" x2="95" y2="235" stroke="#a66d1f" strokeWidth="1"/>
+        <line x1="100" y1="108" x2="100" y2="232" stroke="#a66d1f" strokeWidth="1"/>
+        <line x1="105" y1="106" x2="105" y2="234" stroke="#a66d1f" strokeWidth="1"/>
+        <line x1="110" y1="110" x2="110" y2="230" stroke="#a66d1f" strokeWidth="1"/>
+        
+        {/* Grip pattern */}
+        <g>
+          <path d="M 85 200 L 90 205 L 85 210 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          <path d="M 85 210 L 90 215 L 85 220 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          <path d="M 85 220 L 90 225 L 85 230 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          <path d="M 85 230 L 90 235 L 85 240 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          
+          <path d="M 115 200 L 110 205 L 115 210 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          <path d="M 115 210 L 110 215 L 115 220 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          <path d="M 115 220 L 110 225 L 115 230 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+          <path d="M 115 230 L 110 235 L 115 240 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
+        </g>
+        
+        {/* Grip base */}
+        <ellipse cx="100" cy="245" rx="18" ry="8" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
       </g>
       
-      {/* English Repair with Care text - larger sizes */}
+      {/* English Repair with Care text - much larger */}
       <text 
-        x="35" 
-        y="18" 
-        className="fill-erb-navy font-bold text-base"
-        style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '16px' }}
+        x="42" 
+        y="20" 
+        className="fill-erb-navy font-bold"
+        style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '20px', letterSpacing: '-0.5px' }}
       >
         English Repair
       </text>
       <text 
-        x="35" 
-        y="30" 
+        x="42" 
+        y="35" 
         className="fill-erb-vermilion font-medium italic"
-        style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '13px' }}
+        style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '16px' }}
       >
         with Care
       </text>

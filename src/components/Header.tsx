@@ -35,7 +35,7 @@ export default function Header({ locale }: { locale: string }) {
         <div className="container">
           <div className="flex items-center justify-between h-20">
             <Link href={`/${locale}`} className="flex items-center">
-              <ENRLogo className="h-10" />
+              <ENRLogo className="h-12 md:h-14" />
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
