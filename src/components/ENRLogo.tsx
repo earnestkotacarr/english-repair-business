@@ -7,7 +7,7 @@ interface ENRLogoProps {
 
 export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoProps) {
   return (
-    <div className={`flex items-center gap-1 ${className}`}>
+    <div className={`flex items-center gap-0 ${className}`}>
       {/* User's hammer image */}
       <div className="relative h-full aspect-square">
         <Image
@@ -20,12 +20,12 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
       </div>
       
       {/* English Repair with Care text */}
-      <div className="flex flex-col justify-center">
-        <span className="text-erb-navy font-bold text-lg leading-tight">
+      <div className="flex flex-col justify-center h-full">
+        <span className="text-erb-navy font-bold text-2xl leading-none">
           English Repair
         </span>
-        <span className="text-erb-primary font-medium italic text-sm leading-tight">
-          {locale === 'ja' ? 'ともに' : 'with Care'}
+        <span className="text-erb-primary font-medium italic text-lg leading-none mt-0.5">
+          with Care
         </span>
       </div>
     </div>
