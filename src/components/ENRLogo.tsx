@@ -11,7 +11,7 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
       {/* User's hammer image */}
       <div className="relative h-full aspect-square">
         <Image
-          src="/blue-hammer.png"
+          src="/blue-hammer-clean.png"
           alt="English Repair Logo"
           fill
           className="object-contain"
