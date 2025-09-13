@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface ENRLogoProps {
   className?: string
   locale?: string
@@ -5,64 +7,27 @@ interface ENRLogoProps {
 
 export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoProps) {
   return (
-    <svg 
-      className={className}
-      viewBox="0 0 220 60" 
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* New Hammer icon - styled like the provided image */}
-      <g transform="translate(5, 20) scale(0.12)">
-        {/* Hammer head -->
-        <path d="M 40 80 C 40 70, 50 60, 70 60 L 140 60 L 150 70 L 160 70 C 165 70, 170 75, 170 80 L 170 90 C 170 95, 165 100, 160 100 L 150 100 L 140 110 L 70 110 C 50 110, 40 100, 40 90 Z" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
-        
-        {/* Hammer claw */}
-        <path d="M 40 80 C 35 75, 30 70, 25 68 C 20 66, 18 68, 20 72 C 25 80, 35 85, 40 90" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
-        
-        {/* Wooden handle */}
-        <rect x="85" y="100" width="30" height="140" fill="#c8812a" stroke="#000" strokeWidth="3" rx="2"/>
-        
-        {/* Wood grain lines */}
-        <line x1="90" y1="110" x2="90" y2="230" stroke="#a66d1f" strokeWidth="1"/>
-        <line x1="95" y1="105" x2="95" y2="235" stroke="#a66d1f" strokeWidth="1"/>
-        <line x1="100" y1="108" x2="100" y2="232" stroke="#a66d1f" strokeWidth="1"/>
-        <line x1="105" y1="106" x2="105" y2="234" stroke="#a66d1f" strokeWidth="1"/>
-        <line x1="110" y1="110" x2="110" y2="230" stroke="#a66d1f" strokeWidth="1"/>
-        
-        {/* Grip pattern */}
-        <g>
-          <path d="M 85 200 L 90 205 L 85 210 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          <path d="M 85 210 L 90 215 L 85 220 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          <path d="M 85 220 L 90 225 L 85 230 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          <path d="M 85 230 L 90 235 L 85 240 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          
-          <path d="M 115 200 L 110 205 L 115 210 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          <path d="M 115 210 L 110 215 L 115 220 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          <path d="M 115 220 L 110 225 L 115 230 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-          <path d="M 115 230 L 110 235 L 115 240 Z" fill="#2c7a8f" stroke="#000" strokeWidth="1"/>
-        </g>
-        
-        {/* Grip base */}
-        <ellipse cx="100" cy="245" rx="18" ry="8" fill="#2c7a8f" stroke="#000" strokeWidth="3"/>
-      </g>
+    <div className={`flex items-center gap-3 ${className}`}>
+      {/* User's hammer image */}
+      <div className="relative h-full aspect-square">
+        <Image
+          src="/FDDEE91D-52F0-45AF-82BB-37239CFAE023.jpg"
+          alt="English Repair Logo"
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
       
-      {/* English Repair with Care text - much larger */}
-      <text 
-        x="42" 
-        y="32" 
-        className="fill-erb-navy font-bold"
-        style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '20px', letterSpacing: '-0.5px' }}
-      >
-        English Repair
-      </text>
-      <text 
-        x="42" 
-        y="47" 
-        className="fill-erb-primary font-medium italic"
-        style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '16px' }}
-      >
-        {locale === 'ja' ? 'ともに' : 'with Care'}
-      </text>
-    </svg>
+      {/* English Repair with Care text */}
+      <div className="flex flex-col justify-center">
+        <span className="text-erb-navy font-bold text-lg leading-tight">
+          English Repair
+        </span>
+        <span className="text-erb-primary font-medium italic text-sm leading-tight">
+          {locale === 'ja' ? 'ともに' : 'with Care'}
+        </span>
+      </div>
+    </div>
   )
 }
