@@ -16,7 +16,7 @@ export default function LegalPage({ params: { locale } }: { params: { locale: st
       },
       {
         title: 'お問い合わせ',
-        content: 'info@englishrepair.jp'
+        content: 'info@englishrepair.com'
       },
       {
         title: '商品・サービスの価格',
@@ -56,7 +56,7 @@ export default function LegalPage({ params: { locale } }: { params: { locale: st
       },
       {
         title: 'Contact',
-        content: 'info@englishrepair.jp'
+        content: 'info@englishrepair.com'
       },
       {
         title: 'Service Pricing',

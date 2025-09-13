@@ -18,11 +18,11 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-2">{t('company')}</h3>
             <p className="text-erb-gray-300 text-sm">{t('tagline')}</p>
             <div className="mt-4 space-y-2 text-sm text-erb-gray-300">
-              <a href="mailto:info@englishrepair.jp" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="mailto:info@englishrepair.com" className="flex items-center gap-2 hover:text-white transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                info@englishrepair.jp
+                info@englishrepair.com
               </a>
               {process.env.NEXT_PUBLIC_PHONE && (
                 <a href={`tel:${process.env.NEXT_PUBLIC_PHONE}`} className="flex items-center gap-2 hover:text-white transition-colors">
