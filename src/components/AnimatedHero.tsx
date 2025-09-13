@@ -21,7 +21,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
 
 
   return (
-    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-erb-blue-50 via-white to-erb-blue-50 py-12 lg:py-16">
+    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-erb-blue-50 via-white to-erb-blue-50 py-8 lg:py-16">
       {/* Tech background image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -82,7 +82,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-blue-500/10 text-erb-blue-600 rounded-full text-sm font-medium mt-4"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-blue-500/10 text-erb-blue-600 rounded-full text-sm font-medium"
             >
               <CheckCircle className="w-4 h-4" />
               {t('badge')}

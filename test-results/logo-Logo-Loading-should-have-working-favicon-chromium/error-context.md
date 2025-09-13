@@ -4,13 +4,13 @@
 - generic [active] [ref=e1]:
   - banner [ref=e2]:
     - generic [ref=e4]:
-      - link "English Repair Logo English Repair ともに" [ref=e5] [cursor=pointer]:
+      - link "English Repair Logo English Repair with Care" [ref=e5] [cursor=pointer]:
         - /url: /ja
         - generic [ref=e6] [cursor=pointer]:
           - img "English Repair Logo" [ref=e8] [cursor=pointer]
           - generic [ref=e9] [cursor=pointer]:
             - generic [ref=e10] [cursor=pointer]: English Repair
-            - generic [ref=e11] [cursor=pointer]: ともに
+            - generic [ref=e11] [cursor=pointer]: with Care
       - navigation [ref=e12]:
         - link "ホーム" [ref=e13] [cursor=pointer]:
           - /url: /ja
