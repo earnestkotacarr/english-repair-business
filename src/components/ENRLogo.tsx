@@ -7,7 +7,7 @@ interface ENRLogoProps {
 
 export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoProps) {
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
+    <div className={`flex items-center gap-1 ${className}`}>
       {/* User's hammer image */}
       <div className="relative h-full aspect-square">
         <Image
