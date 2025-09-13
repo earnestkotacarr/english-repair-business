@@ -34,7 +34,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="icon" href="/blue-hammer-clean.png" type="image/png" />
+        <link rel="icon" href="/8C61A6E4-269D-4ED7-9710-8E9F5F5FCD6C-removebg-preview.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />

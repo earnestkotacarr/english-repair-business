@@ -1,0 +1,208 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "English Repair Logo English Repair ともに" [ref=e5] [cursor=pointer]:
+        - /url: /ja
+        - generic [ref=e6] [cursor=pointer]:
+          - img "English Repair Logo" [ref=e8] [cursor=pointer]
+          - generic [ref=e9] [cursor=pointer]:
+            - generic [ref=e10] [cursor=pointer]: English Repair
+            - generic [ref=e11] [cursor=pointer]: ともに
+      - navigation [ref=e12]:
+        - link "ホーム" [ref=e13] [cursor=pointer]:
+          - /url: /ja
+        - link "サービス" [ref=e14] [cursor=pointer]:
+          - /url: /ja/services
+        - link "プロセス" [ref=e15] [cursor=pointer]:
+          - /url: /ja/process
+        - link "会社概要" [ref=e16] [cursor=pointer]:
+          - /url: /ja/about
+        - link "お問い合わせ" [ref=e17] [cursor=pointer]:
+          - /url: /ja/contact
+      - button "English" [ref=e19] [cursor=pointer]:
+        - img [ref=e20] [cursor=pointer]
+        - text: English
+  - main [ref=e22]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - img [ref=e38]
+          - text: 日本のB2B企業に特化
+        - generic [ref=e41]:
+          - heading "プロフェッショナルな英語 日本語のニュアンスと技術的精度を保つ。" [level=1] [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e44]: プロフェッショナルな英語
+              - generic [ref=e45]: 日本語のニュアンスと技術的精度を保つ。
+          - paragraph [ref=e46]:
+            - generic [ref=e47]: 技術コンテンツとメディアの全面的な改善 — ニュアンスを捉えた明瞭さとインパクトのある表現へ。
+        - generic [ref=e48]:
+          - link "無料1ページミニ監査を依頼" [ref=e49] [cursor=pointer]:
+            - /url: /ja/contact
+            - button "無料1ページミニ監査を依頼" [ref=e50] [cursor=pointer]
+          - link "サービス詳細" [ref=e51] [cursor=pointer]:
+            - /url: /ja/services
+            - button "サービス詳細" [ref=e52] [cursor=pointer]
+      - generic [ref=e53]:
+        - img "Riley Eusden - English Repair" [ref=e57]
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: プロフェッショナル英語コンサルタント
+          - paragraph [ref=e62]: B2Bアジア市場スペシャリスト
+    - generic [ref=e67]:
+      - heading "業界リーダーが私たちを選ぶ理由" [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e74]:
+          - img [ref=e78]
+          - heading "深い業界専門知識" [level=3] [ref=e83]
+          - paragraph [ref=e84]: 半導体、製造装置、精密機械、医療機器、センサー、印刷・包装、電子システム
+        - generic [ref=e88]:
+          - img [ref=e92]
+          - heading "プロフェッショナルな卓越性と技術的精度" [level=3] [ref=e95]
+          - paragraph [ref=e96]: 技術的な意味を正確に保持しながら、ネイティブレベルの流暢さとスタイルを実現するプロフェッショナルグレードの英語
+        - generic [ref=e100]:
+          - img [ref=e104]
+          - heading "ネイティブ英語品質保証" [level=3] [ref=e109]
+          - paragraph [ref=e110]: 国際ビジネスの最高水準を満たす複数段階の編集プロセス
+    - generic [ref=e112]:
+      - generic [ref=e113]:
+        - heading "Before/After サンプル" [level=2] [ref=e114]
+        - paragraph [ref=e115]: 実際の改善例をご覧ください。曖昧な表現が具体的で説得力のある英語に変わります。
+      - generic [ref=e116]:
+        - tablist [ref=e118]:
+          - tab "Web コンテンツ" [selected] [ref=e119] [cursor=pointer]:
+            - img [ref=e120] [cursor=pointer]
+            - text: Web コンテンツ
+          - tab "技術仕様書" [ref=e123] [cursor=pointer]:
+            - img [ref=e124] [cursor=pointer]
+            - text: 技術仕様書
+          - tab "プレスリリース" [ref=e127] [cursor=pointer]:
+            - img [ref=e128] [cursor=pointer]
+            - text: プレスリリース
+          - tab "マーケティング資料" [ref=e131] [cursor=pointer]:
+            - img [ref=e132] [cursor=pointer]
+            - text: マーケティング資料
+        - generic [ref=e136]:
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - heading "改善前" [level=3] [ref=e141]:
+                - img [ref=e142]
+                - text: 改善前
+              - generic [ref=e146]: 要改善
+            - generic [ref=e147]: Our company is doing the manufacture for semiconductor equipment. We have the special technology like lithography machine, and the product make faster process and also less defect than normal system.
+            - generic [ref=e148]:
+              - paragraph [ref=e149]: "問題点:"
+              - generic [ref=e150]: 曖昧な表現
+              - generic [ref=e152]: 具体性の欠如
+              - generic [ref=e154]: 差別化不明瞭
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - heading "改善後" [level=3] [ref=e160]:
+                - img [ref=e161]
+                - text: 改善後
+              - generic [ref=e164]: 改善済
+            - generic [ref=e165]: Our company manufactures semiconductor equipment, including advanced lithography systems that enable faster processing and fewer defects than conventional systems.
+            - generic [ref=e166]:
+              - paragraph [ref=e167]: "改善点:"
+              - generic [ref=e168]:
+                - img [ref=e169]
+                - text: 具体的な説明
+              - generic [ref=e172]:
+                - img [ref=e173]
+                - text: 技術的優位性
+              - generic [ref=e176]:
+                - img [ref=e177]
+                - text: 明確な価値提案
+      - generic [ref=e180]:
+        - paragraph [ref=e181]: あなたのコンテンツも、このように生まれ変わります
+        - link "無料サンプルを依頼" [ref=e182] [cursor=pointer]:
+          - /url: /ja/contact
+          - text: 無料サンプルを依頼
+          - img [ref=e183] [cursor=pointer]
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - heading "お客様に優しい3ステップ" [level=2] [ref=e188]
+        - paragraph [ref=e189]: ご安心ください。一緒に進めていきます
+      - generic [ref=e191]:
+        - generic [ref=e194]:
+          - generic [ref=e195]: "1"
+          - img [ref=e197]
+          - heading "初回監査と分析" [level=3] [ref=e200]
+          - paragraph [ref=e201]: お客様のニーズを理解し、コンテンツを丁寧に分析いたします
+          - list [ref=e202]:
+            - listitem [ref=e203]:
+              - img [ref=e204]
+              - generic [ref=e206]: ビデオ/対面での相談（無料）
+            - listitem [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e210]: 企業専門用語の調整
+            - listitem [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e214]: 価値実証を伴う短期改善プラン
+          - generic [ref=e216]:
+            - img [ref=e217]
+            - text: 2-3営業日
+        - generic [ref=e221]:
+          - generic [ref=e222]: "2"
+          - img [ref=e224]
+          - heading "コンテンツ変換" [level=3] [ref=e229]
+          - paragraph [ref=e230]: 体系的に英語を改善していきます
+          - list [ref=e231]:
+            - listitem [ref=e232]:
+              - img [ref=e233]
+              - generic [ref=e235]: ネイティブ英語への洗練
+            - listitem [ref=e236]:
+              - img [ref=e237]
+              - generic [ref=e239]: 構成の最適化
+            - listitem [ref=e240]:
+              - img [ref=e241]
+              - generic [ref=e243]: 日本語での説明を含む技術的精度の保持
+          - generic [ref=e245]:
+            - img [ref=e246]
+            - text: 3-7営業日
+        - generic [ref=e249]:
+          - generic [ref=e250]: "3"
+          - img [ref=e252]
+          - heading "納品とサポート" [level=3] [ref=e256]
+          - paragraph [ref=e257]: すぐに使える完成コンテンツをお渡しします
+          - list [ref=e258]:
+            - listitem [ref=e259]:
+              - img [ref=e260]
+              - generic [ref=e262]: コンテンツ内で編集箇所を強調
+            - listitem [ref=e263]:
+              - img [ref=e264]
+              - generic [ref=e266]: クリーンで公開可能な最終版
+            - listitem [ref=e267]:
+              - img [ref=e268]
+              - generic [ref=e270]: アフターサポートも可能
+          - generic [ref=e272]:
+            - img [ref=e273]
+            - text: 1-2営業日
+  - contentinfo [ref=e275]:
+    - generic [ref=e276]:
+      - generic [ref=e277]:
+        - generic [ref=e278]:
+          - heading "English Repair" [level=3] [ref=e279]
+          - paragraph [ref=e280]: 技術英語のリノベーション
+          - link "info@englishrepair.jp" [ref=e282] [cursor=pointer]:
+            - /url: mailto:info@englishrepair.jp
+            - img [ref=e283] [cursor=pointer]
+            - text: info@englishrepair.jp
+        - generic [ref=e285]:
+          - heading "クイックリンク" [level=3] [ref=e286]
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "プライバシーポリシー" [ref=e289] [cursor=pointer]:
+                - /url: /ja/privacy
+            - listitem [ref=e290]:
+              - link "特定商取引法に基づく表記" [ref=e291] [cursor=pointer]:
+                - /url: /ja/legal
+        - generic [ref=e292]:
+          - heading "事業情報" [level=3] [ref=e293]
+          - paragraph [ref=e295]:
+            - img [ref=e296]
+            - text: 東京都[区][住所]
+      - paragraph [ref=e300]: © 2025 English Repair. All rights reserved.
+  - alert [ref=e301]
+```
