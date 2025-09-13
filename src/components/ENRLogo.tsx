@@ -20,11 +20,11 @@ export default function ENRLogo({ className = "h-12", locale = 'ja' }: ENRLogoPr
       </div>
       
       {/* English Repair with Care text */}
-      <div className="flex flex-col justify-center h-full">
+      <div className="flex flex-col justify-between h-full py-1">
         <span className="text-erb-navy font-bold text-2xl leading-none">
           English Repair
         </span>
-        <span className="text-erb-primary font-medium italic text-lg leading-none mt-0.5">
+        <span className="text-erb-primary font-medium italic text-xl leading-none">
           with Care
         </span>
       </div>
