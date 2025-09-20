@@ -32,7 +32,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
     {
       icon: Clock,
       title: tServices('qa.title'),
-      price: '¥100,000',
+      price: '¥100,000-300,000',
       unit: t('perMonth'),
       includes: t('monthlyIncludes'),
       gradient: 'from-emerald-500 to-teal-500'
@@ -115,7 +115,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
                 }}
                 className="group relative"
               >
-                <div className="relative h-full bg-white rounded-xl border border-erb-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300">
+                <div className="relative h-full bg-white rounded-xl border border-erb-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                   {/* Gradient Accent */}
                   <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${pricing.gradient} rounded-t-xl`} />
 
@@ -140,8 +140,8 @@ export default function PricingOverview({ locale }: { locale: string }) {
                   </div>
 
                   {/* Includes */}
-                  <div className="border-t border-erb-gray-100 pt-3">
-                    <p className="text-xs text-erb-gray-600 italic" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                  <div className="border-t border-erb-gray-100 pt-3 mt-auto">
+                    <p className="text-[11px] text-erb-gray-600 leading-relaxed" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                       {pricing.includes}
                     </p>
                   </div>

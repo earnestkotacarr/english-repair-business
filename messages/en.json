@@ -56,7 +56,7 @@
     "qa": {
       "title": "Monthly Subscription Plan",
       "description": "Ongoing English editing support subscription",
-      "price": "5 projects/month for ¥100,000",
+      "price": "¥100,000-300,000/month (volume-based)",
       "timeline": "24-72 hour response",
       "includes": "5 projects per month (max 4 pages each, additional charges for exceeding), priority support"
     },
@@ -76,10 +76,11 @@
     "perPage": "per page",
     "perMonth": "per month",
     "fullAudit": "full audit",
-    "webIncludes": "Full page rewrite with tracked changes",
-    "auditIncludes": "Detailed report with recommendations",
-    "monthlyIncludes": "5 projects, priority support",
-    "mediaIncludes": "Professional press release style"
+    "webIncludes": "Complete page renovation preserving technical accuracy. Includes tracked changes and explanations for every edit.",
+    "auditIncludes": "Full analysis of all English touchpoints with actionable roadmap for international growth.",
+    "monthlyIncludes": "Flexible ongoing support (5-15 projects). 24-72 hour turnaround. Dedicated terminology management.",
+    "mediaIncludes": "Transform technical announcements into compelling stories that international media will cover.",
+    "monthlyNote": "*Volume-based pricing, customized to your needs"
   },
   "process": {
     "title": "Simple 3-Step Process",
