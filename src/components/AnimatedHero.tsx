@@ -82,10 +82,10 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-erb-blue-500/10 text-erb-blue-600 rounded-full text-sm font-medium"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-erb-blue-500/15 text-erb-blue-700 rounded-full text-xl sm:text-2xl font-bold shadow-sm"
             >
-              <CheckCircle className="w-4 h-4" />
-              {t('badge')}
+              <CheckCircle className="w-6 h-6" />
+              <span className="tracking-wide">{t('badge')}</span>
             </motion.div>
 
             {/* Main Headline with Typed Effect */}
@@ -99,12 +99,12 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <span className="block">
                   {/* Mobile headline */}
                   <span className="block sm:hidden">
-                    <span className="block text-3xl text-black font-bold">{t('headlinePart1')}</span>
-                    <span className="block text-lg mt-2 text-erb-gray-700">{t('headlinePart2')}</span>
+                    <span className="block text-3xl text-black font-bold" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('headlinePart1')}</span>
+                    <span className="block text-lg mt-2 text-erb-gray-700" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('headlinePart2')}</span>
                   </span>
                   {/* Desktop headline */}
-                  <span className="hidden sm:block text-5xl lg:text-5xl xl:text-6xl text-black font-bold">{t('headlinePart1')}</span>
-                  <span className="hidden sm:block text-xl sm:text-2xl lg:text-2xl xl:text-3xl mt-2 text-erb-gray-700">
+                  <span className="hidden sm:block text-5xl lg:text-5xl xl:text-6xl text-black font-bold" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('headlinePart1')}</span>
+                  <span className="hidden sm:block text-xl sm:text-2xl lg:text-2xl xl:text-3xl mt-2 text-erb-gray-700" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                     {t('headlinePart2')}
                   </span>
                 </span>
@@ -117,9 +117,9 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
                 {/* Mobile subheadline */}
-                <span className="block sm:hidden text-base">{t('subheadline_mobile')}</span>
+                <span className="block sm:hidden text-base" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('subheadline_mobile')}</span>
                 {/* Desktop subheadline */}
-                <span className="hidden sm:block text-lg lg:text-xl">{t('subheadline')}</span>
+                <span className="hidden sm:block text-lg lg:text-xl" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('subheadline')}</span>
               </motion.p>
             </div>
 
@@ -204,12 +204,21 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             
             {/* Professional Caption */}
             <div className="mt-6 mb-8 lg:mb-12 text-center">
-              <p className="text-sm lg:text-base font-medium text-erb-navy">
+              <p className="text-sm lg:text-base font-medium text-erb-navy" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                 {t('captionTitle')}
               </p>
-              <p className="text-xs lg:text-sm text-erb-gray-600 mt-1 mb-4 lg:mb-8">
+              <p className="text-xs lg:text-sm text-erb-gray-600 mt-1" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                 {t('captionSubtitle')}
               </p>
+              {/* Background Details */}
+              <div className="mt-3 space-y-1">
+                <p className="text-xs lg:text-sm text-erb-gray-700 font-medium" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                  {t('captionBackground1')}
+                </p>
+                <p className="text-xs lg:text-sm text-erb-gray-600" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                  {t('captionBackground2')}
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

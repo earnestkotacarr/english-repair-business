@@ -19,6 +19,8 @@
     "viewServices": "サービス詳細",
     "captionTitle": "プロフェッショナル英語コンサルタント",
     "captionSubtitle": "B2Bアジア市場スペシャリスト",
+    "captionBackground1": "大阪大学修士号 • 日本のB2B企業で10年以上の経験",
+    "captionBackground2": "半導体・製造装置・精密機械分野に特化",
     "altFounderImage": "Riley Eusden - English Repair"
   },
   "values": {
@@ -66,6 +68,15 @@
       "timeline": "3-10営業日",
       "includes": "プロフェッショナルな高品質プレスリリーススタイルの英語ライティング"
     }
+  },
+  "pricing": {
+    "title": "透明な価格設定",
+    "subtitle": "お客様のニーズに合わせたプロフェッショナルサービス",
+    "viewFullServices": "サービス詳細を見る",
+    "starting": "開始価格",
+    "perPage": "ページあたり",
+    "perMonth": "月額",
+    "fullAudit": "全体監査"
   },
   "process": {
     "title": "お客様に優しい3ステップ",

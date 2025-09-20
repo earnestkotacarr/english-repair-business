@@ -65,7 +65,7 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
   return (
     <div className="py-16 bg-erb-gray-50">
       <div className="container">
-        <h1 className="text-4xl font-bold text-center mb-12 text-erb-navy">{t('title')}</h1>
+        <h1 className="text-4xl font-bold text-center mb-12 text-erb-navy" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('title')}</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service) => (
@@ -74,21 +74,21 @@ export default function ServicesPage({ params: { locale } }: { params: { locale:
               className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-erb-gray-100"
             >
               <div className="text-erb-primary mb-6">{service.icon}</div>
-              <h2 className="text-2xl font-bold mb-3 text-erb-navy">{service.title}</h2>
-              <p className="text-erb-gray-500 mb-4">{service.description}</p>
+              <h2 className="text-2xl font-bold mb-3 text-erb-navy" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{service.title}</h2>
+              <p className="text-erb-gray-500 mb-4" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{service.description}</p>
               
               <div className="space-y-3 mb-6">
                 <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
                   <span className="text-sm font-medium text-erb-navy">Price:</span>
-                  <span className="text-sm text-erb-primary font-medium">{service.price}</span>
+                  <span className="text-sm text-erb-primary font-medium" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{service.price}</span>
                 </div>
                 <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
                   <span className="text-sm font-medium text-erb-navy">Timeline:</span>
-                  <span className="text-sm text-erb-gray-500">{service.timeline}</span>
+                  <span className="text-sm text-erb-gray-500" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{service.timeline}</span>
                 </div>
                 <div className="grid grid-cols-[80px,1fr] gap-2 items-start">
                   <span className="text-sm font-medium text-erb-navy">Includes:</span>
-                  <span className="text-sm text-erb-gray-500">{service.includes}</span>
+                  <span className="text-sm text-erb-gray-500" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{service.includes}</span>
                 </div>
               </div>
             </div>
