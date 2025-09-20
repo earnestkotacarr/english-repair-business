@@ -19,8 +19,7 @@
     "viewServices": "View Services",
     "captionTitle": "Professional English Consultant",
     "captionSubtitle": "B2B Asian Market Specialist",
-    "captionBackground1": "Master's from Osaka University • 10+ years with Japanese B2B companies",
-    "captionBackground2": "Specialized in semiconductors, manufacturing equipment, and precision machinery",
+    "captionBackground1": "Master's from Osaka University • 7+ years with Japanese B2B companies",
     "altFounderImage": "Riley Eusden - English Repair"
   },
   "values": {
@@ -76,7 +75,11 @@
     "starting": "Starting at",
     "perPage": "per page",
     "perMonth": "per month",
-    "fullAudit": "full audit"
+    "fullAudit": "full audit",
+    "webIncludes": "Full page rewrite with tracked changes",
+    "auditIncludes": "Detailed report with recommendations",
+    "monthlyIncludes": "5 projects, priority support",
+    "mediaIncludes": "Professional press release style"
   },
   "process": {
     "title": "Simple 3-Step Process",

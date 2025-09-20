@@ -82,7 +82,7 @@ export default function AnimatedHero({ locale }: { locale: string }) {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-3 px-6 py-3 bg-erb-blue-500/15 text-erb-blue-700 rounded-full text-xl sm:text-2xl font-bold shadow-sm"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-erb-blue-500/10 text-erb-blue-600 rounded-full text-xl sm:text-2xl font-bold shadow-sm"
             >
               <CheckCircle className="w-6 h-6" />
               <span className="tracking-wide">{t('badge')}</span>
@@ -211,12 +211,9 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 {t('captionSubtitle')}
               </p>
               {/* Background Details */}
-              <div className="mt-3 space-y-1">
-                <p className="text-xs lg:text-sm text-erb-gray-700 font-medium" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+              <div className="mt-2">
+                <p className="text-[11px] lg:text-xs text-erb-gray-600" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                   {t('captionBackground1')}
-                </p>
-                <p className="text-xs lg:text-sm text-erb-gray-600" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
-                  {t('captionBackground2')}
                 </p>
               </div>
             </div>

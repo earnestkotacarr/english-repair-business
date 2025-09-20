@@ -18,6 +18,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
       title: tServices('web.title'),
       price: '¥10,000-20,000',
       unit: t('perPage'),
+      includes: t('webIncludes'),
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
@@ -25,6 +26,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
       title: tServices('audit.title'),
       price: '¥30,000-100,000',
       unit: t('fullAudit'),
+      includes: t('auditIncludes'),
       gradient: 'from-erb-primary to-erb-blue-600'
     },
     {
@@ -32,6 +34,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
       title: tServices('qa.title'),
       price: '¥100,000',
       unit: t('perMonth'),
+      includes: t('monthlyIncludes'),
       gradient: 'from-emerald-500 to-teal-500'
     },
     {
@@ -39,6 +42,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
       title: tServices('media.title'),
       price: '¥25,000-50,000',
       unit: t('perPage'),
+      includes: t('mediaIncludes'),
       gradient: 'from-purple-500 to-pink-500'
     }
   ]
@@ -121,17 +125,24 @@ export default function PricingOverview({ locale }: { locale: string }) {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-semibold text-erb-navy mb-3 min-h-[3rem]" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                  <h3 className="text-base font-semibold text-erb-navy mb-2" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                     {pricing.title}
                   </h3>
 
                   {/* Price */}
-                  <div className="space-y-1">
-                    <p className="text-2xl font-bold text-erb-primary">
+                  <div className="mb-3">
+                    <p className="text-xl font-bold text-erb-primary">
                       {pricing.price}
                     </p>
-                    <p className="text-sm text-erb-gray-500" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <p className="text-xs text-erb-gray-500" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
                       {pricing.unit}
+                    </p>
+                  </div>
+
+                  {/* Includes */}
+                  <div className="border-t border-erb-gray-100 pt-3">
+                    <p className="text-xs text-erb-gray-600 italic" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                      {pricing.includes}
                     </p>
                   </div>
                 </div>
