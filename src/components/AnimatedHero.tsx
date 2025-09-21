@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { ArrowRight, CheckCircle } from 'lucide-react'
+import { getJapaneseTextClass } from '@/utils/japaneseText'
 
 export default function AnimatedHero({ locale }: { locale: string }) {
   const t = useTranslations('hero')
@@ -99,12 +100,12 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 <span className="block">
                   {/* Mobile headline */}
                   <span className="block sm:hidden">
-                    <span className="block text-3xl text-black font-bold" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('headlinePart1')}</span>
-                    <span className="block text-lg mt-2 text-erb-gray-700" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('headlinePart2')}</span>
+                    <span className={getJapaneseTextClass(locale, "block text-3xl text-black font-bold")}>{t('headlinePart1')}</span>
+                    <span className={getJapaneseTextClass(locale, "block text-lg mt-2 text-erb-gray-700")}>{t('headlinePart2')}</span>
                   </span>
                   {/* Desktop headline */}
-                  <span className="hidden sm:block text-5xl lg:text-5xl xl:text-6xl text-black font-bold" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('headlinePart1')}</span>
-                  <span className="hidden sm:block text-xl sm:text-2xl lg:text-2xl xl:text-3xl mt-2 text-erb-gray-700" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                  <span className={getJapaneseTextClass(locale, "hidden sm:block text-5xl lg:text-5xl xl:text-6xl text-black font-bold")}>{t('headlinePart1')}</span>
+                  <span className={getJapaneseTextClass(locale, "hidden sm:block text-xl sm:text-2xl lg:text-2xl xl:text-3xl mt-2 text-erb-gray-700")}>
                     {t('headlinePart2')}
                   </span>
                 </span>
@@ -117,9 +118,9 @@ export default function AnimatedHero({ locale }: { locale: string }) {
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
                 {/* Mobile subheadline */}
-                <span className="block sm:hidden text-base" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('subheadline_mobile')}</span>
+                <span className={getJapaneseTextClass(locale, "block sm:hidden text-base")}>{t('subheadline_mobile')}</span>
                 {/* Desktop subheadline */}
-                <span className="hidden sm:block text-lg lg:text-xl" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('subheadline')}</span>
+                <span className={getJapaneseTextClass(locale, "hidden sm:block text-lg lg:text-xl")}>{t('subheadline')}</span>
               </motion.p>
             </div>
 
@@ -204,15 +205,15 @@ export default function AnimatedHero({ locale }: { locale: string }) {
             
             {/* Professional Caption */}
             <div className="mt-6 mb-8 lg:mb-12 text-center">
-              <p className="text-sm lg:text-base font-medium text-erb-navy" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+              <p className={getJapaneseTextClass(locale, "text-sm lg:text-base font-medium text-erb-navy")}>
                 {t('captionTitle')}
               </p>
-              <p className="text-xs lg:text-sm text-erb-gray-600 mt-1" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+              <p className={getJapaneseTextClass(locale, "text-xs lg:text-sm text-erb-gray-600 mt-1")}>
                 {t('captionSubtitle')}
               </p>
               {/* Background Details */}
               <div className="mt-2">
-                <p className="text-[11px] lg:text-xs text-erb-gray-600" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                <p className={getJapaneseTextClass(locale, "text-[11px] lg:text-xs text-erb-gray-600")}>
                   {t('captionBackground1')}
                 </p>
               </div>

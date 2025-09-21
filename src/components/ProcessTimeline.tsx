@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Search, RefreshCw, Package } from 'lucide-react'
+import { getJapaneseTextClass } from '@/utils/japaneseText'
 
 export default function ProcessTimeline({ locale }: { locale?: string }) {
   const t = useTranslations('process')
@@ -49,8 +50,8 @@ export default function ProcessTimeline({ locale }: { locale?: string }) {
     <section className="py-20 bg-gradient-to-b from-red-100 to-white">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-erb-navy mb-3" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('title')}</h2>
-          <p className="text-erb-gray-600 text-lg" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('subtitle')}</p>
+          <h2 className={getJapaneseTextClass(locale, "text-3xl font-bold text-erb-navy mb-3")}>{t('title')}</h2>
+          <p className={getJapaneseTextClass(locale, "text-erb-gray-600 text-lg")}>{t('subtitle')}</p>
         </div>
         
         <div className="max-w-6xl mx-auto">
@@ -76,12 +77,12 @@ export default function ProcessTimeline({ locale }: { locale?: string }) {
                     </div>
                     
                     {/* Title */}
-                    <h3 className="text-xl font-bold text-erb-navy mb-2 text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <h3 className={getJapaneseTextClass(locale, "text-xl font-bold text-erb-navy mb-2 text-center")}>
                       {step.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-erb-gray-600 text-sm mb-4 text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <p className={getJapaneseTextClass(locale, "text-erb-gray-600 text-sm mb-4 text-center")}>
                       {step.description}
                     </p>
                     
@@ -92,7 +93,7 @@ export default function ProcessTimeline({ locale }: { locale?: string }) {
                           <svg className="w-4 h-4 text-erb-vermilion mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{detail}</span>
+                          <span className={getJapaneseTextClass(locale)}>{detail}</span>
                         </li>
                       ))}
                     </ul>

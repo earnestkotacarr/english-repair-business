@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Target, BookOpen, ClipboardCheck, Sparkles } from 'lucide-react'
+import { getJapaneseTextClass } from '@/utils/japaneseText'
 
 export default function AnimatedValueCards({ locale }: { locale?: string }) {
   const t = useTranslations('values')
@@ -73,7 +74,7 @@ export default function AnimatedValueCards({ locale }: { locale?: string }) {
             <Sparkles className="w-8 h-8 text-erb-vermilion" />
           </motion.div>
           
-          <h2 className="text-4xl font-bold text-erb-navy mb-4" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('title')}</h2>
+          <h2 className={getJapaneseTextClass(locale, "text-4xl font-bold text-erb-navy mb-4")}>{t('title')}</h2>
           
           <motion.div
             className="w-24 h-1 bg-gradient-to-r from-erb-primary to-erb-blue-600 mx-auto rounded-full"
@@ -141,11 +142,11 @@ export default function AnimatedValueCards({ locale }: { locale?: string }) {
                     </motion.div>
                     
                     {/* Content */}
-                    <h3 className="text-xl font-semibold mb-3 text-erb-navy group-hover:text-erb-primary transition-colors duration-300" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <h3 className={getJapaneseTextClass(locale, "text-xl font-semibold mb-3 text-erb-navy group-hover:text-erb-primary transition-colors duration-300")}>
                       {value.title}
                     </h3>
 
-                    <p className="text-erb-gray-500 leading-relaxed" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <p className={getJapaneseTextClass(locale, "text-erb-gray-500 leading-relaxed")}>
                       {value.description}
                     </p>
                     

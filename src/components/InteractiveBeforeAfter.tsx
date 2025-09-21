@@ -5,6 +5,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import * as Tabs from '@radix-ui/react-tabs'
 import { Code, FileText, Globe, ArrowRight, CheckCircle, XCircle, Megaphone } from 'lucide-react'
+import { getJapaneseTextClass } from '@/utils/japaneseText'
 
 export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
   const t = useTranslations('results.beforeAfter')
@@ -120,11 +121,11 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-erb-navy mb-4">
+          <h2 className={getJapaneseTextClass(locale, "text-4xl font-bold text-erb-navy mb-4")}>
             {t('title')}
           </h2>
-          <p className="text-lg text-erb-gray-600 max-w-2xl mx-auto">
-            {isJapanese 
+          <p className={getJapaneseTextClass(locale, "text-lg text-erb-gray-600 max-w-2xl mx-auto")}>
+            {isJapanese
               ? '実際の改善例をご覧ください。曖昧な表現が具体的で説得力のある英語に変わります。'
               : 'See real transformation examples. Watch vague expressions become specific, compelling English.'}
           </p>
@@ -178,11 +179,11 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                   <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-red-50 rounded-2xl blur-xl opacity-50" />
                   <div className="relative bg-white rounded-2xl border-2 border-red-200 p-8 shadow-xl min-h-[500px] flex flex-col">
                     <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-2xl font-bold text-erb-navy flex items-center gap-2">
+                      <h3 className={getJapaneseTextClass(locale, "text-2xl font-bold text-erb-navy flex items-center gap-2")}>
                         <XCircle className="w-6 h-6 text-red-500" />
                         {currentExample.before.title}
                       </h3>
-                      <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
+                      <span className={getJapaneseTextClass(locale, "px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium")}>
                         {isJapanese ? '要改善' : 'Needs Work'}
                       </span>
                     </div>
@@ -192,7 +193,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                     </div>
                     
                     <div className="space-y-2 mt-auto">
-                      <p className="text-sm font-medium text-erb-gray-500 mb-2">
+                      <p className={getJapaneseTextClass(locale, "text-sm font-medium text-erb-gray-500 mb-2")}>
                         {isJapanese ? '問題点:' : 'Issues:'}
                       </p>
                       {currentExample.before.issues.map((issue, index) => (
@@ -201,7 +202,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.4 + index * 0.1 }}
-                          className="flex items-center gap-2 text-sm text-red-600"
+                          className={getJapaneseTextClass(locale, "flex items-center gap-2 text-sm text-red-600")}
                         >
                           <div className="w-1.5 h-1.5 bg-red-500 rounded-full" />
                           {issue}
@@ -219,11 +220,11 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                   <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-50 rounded-2xl blur-xl opacity-50" />
                   <div className="relative bg-white rounded-2xl border-2 border-green-200 p-8 shadow-xl min-h-[500px] flex flex-col">
                     <div className="flex items-center justify-between mb-6">
-                      <h3 className="text-2xl font-bold text-erb-navy flex items-center gap-2">
+                      <h3 className={getJapaneseTextClass(locale, "text-2xl font-bold text-erb-navy flex items-center gap-2")}>
                         <CheckCircle className="w-6 h-6 text-green-500" />
                         {currentExample.after.title}
                       </h3>
-                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                      <span className={getJapaneseTextClass(locale, "px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium")}>
                         {isJapanese ? '改善済' : 'Optimized'}
                       </span>
                     </div>
@@ -233,7 +234,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                     </div>
                     
                     <div className="space-y-2 mt-auto">
-                      <p className="text-sm font-medium text-erb-gray-500 mb-2">
+                      <p className={getJapaneseTextClass(locale, "text-sm font-medium text-erb-gray-500 mb-2")}>
                         {isJapanese ? '改善点:' : 'Improvements:'}
                       </p>
                       {currentExample.after.improvements.map((improvement, index) => (
@@ -242,7 +243,7 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.4 + index * 0.1 }}
-                          className="flex items-center gap-2 text-sm text-green-600"
+                          className={getJapaneseTextClass(locale, "flex items-center gap-2 text-sm text-green-600")}
                         >
                           <CheckCircle className="w-3 h-3 text-green-500" />
                           {improvement}
@@ -264,8 +265,8 @@ export default function InteractiveBeforeAfter({ locale }: { locale: string }) {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-center mt-16"
         >
-          <p className="text-lg text-erb-gray-600 mb-6">
-            {isJapanese 
+          <p className={getJapaneseTextClass(locale, "text-lg text-erb-gray-600 mb-6")}>
+            {isJapanese
               ? 'あなたのコンテンツも、このように生まれ変わります'
               : 'Your content can be transformed just like this'}
           </p>

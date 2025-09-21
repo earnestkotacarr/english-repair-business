@@ -32,4 +32,28 @@
   .card-hover {
     @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
   }
+
+  /* Japanese text handling for proper line breaking */
+  .ja-text {
+    line-break: strict;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-line-break: strict; /* Safari prefix */
+    -moz-line-break: strict; /* Firefox prefix */
+    -ms-line-break: strict; /* IE/Edge prefix */
+  }
+
+  /* Future-proofing with auto-phrase support */
+  @supports (word-break: auto-phrase) {
+    .ja-text {
+      word-break: auto-phrase;
+      line-break: normal;
+    }
+  }
+
+  /* Fallback for older browsers */
+  .ja-text-fallback {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
 }

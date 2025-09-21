@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Globe, FileText, Clock, Newspaper, ArrowRight } from 'lucide-react'
+import { getJapaneseTextClass } from '@/utils/japaneseText'
 
 export default function PricingOverview({ locale }: { locale: string }) {
   const t = useTranslations('pricing')
@@ -77,10 +78,10 @@ export default function PricingOverview({ locale }: { locale: string }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-erb-navy mb-4" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+          <h2 className={getJapaneseTextClass(locale, "text-4xl font-bold text-erb-navy mb-4")}>
             {t('title')}
           </h2>
-          <p className="text-lg text-erb-gray-600" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+          <p className={getJapaneseTextClass(locale, "text-lg text-erb-gray-600")}>
             {t('subtitle')}
           </p>
 
@@ -125,7 +126,7 @@ export default function PricingOverview({ locale }: { locale: string }) {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-base font-semibold text-erb-navy mb-2" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                  <h3 className={getJapaneseTextClass(locale, "text-base font-semibold text-erb-navy mb-2")}>
                     {pricing.title}
                   </h3>
 
@@ -134,14 +135,14 @@ export default function PricingOverview({ locale }: { locale: string }) {
                     <p className="text-xl font-bold text-erb-primary">
                       {pricing.price}
                     </p>
-                    <p className="text-xs text-erb-gray-500" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <p className={getJapaneseTextClass(locale, "text-xs text-erb-gray-500")}>
                       {pricing.unit}
                     </p>
                   </div>
 
                   {/* Includes */}
                   <div className="border-t border-erb-gray-100 pt-3 mt-auto">
-                    <p className="text-[11px] text-erb-gray-600 leading-relaxed" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>
+                    <p className={getJapaneseTextClass(locale, "text-[11px] text-erb-gray-600 leading-relaxed")}>
                       {pricing.includes}
                     </p>
                   </div>

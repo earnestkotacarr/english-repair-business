@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getJapaneseTextClass } from '@/utils/japaneseText'
 
 export default function AboutPage({ params: { locale } }: { params: { locale: string } }) {
   const t = useTranslations('about')
@@ -45,12 +46,12 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
       
       <div className="container relative">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-erb-navy text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('title')}</h1>
-          <p className="text-lg text-erb-gray-600 mb-12 text-center max-w-3xl mx-auto" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('intro')}</p>
+          <h1 className={getJapaneseTextClass(locale, "text-4xl font-bold mb-4 text-erb-navy text-center")}>{t('title')}</h1>
+          <p className={getJapaneseTextClass(locale, "text-lg text-erb-gray-600 mb-12 text-center max-w-3xl mx-auto")}>{t('intro')}</p>
           
           {/* Team Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-8 text-erb-navy text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{t('teamTitle')}</h2>
+            <h2 className={getJapaneseTextClass(locale, "text-2xl font-bold mb-8 text-erb-navy text-center")}>{t('teamTitle')}</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               {teamMembers.map((member, index) => (
@@ -86,12 +87,12 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
                   
                   {/* Profile Info */}
                   <div>
-                    <h3 className="text-xl font-bold text-erb-navy mb-1 text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{member.name}</h3>
-                    <p className="text-lg text-erb-blue-500 font-semibold mb-1 text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{member.role}</p>
-                    <p className="text-sm text-erb-gray-600 mb-2 text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{member.experience}</p>
-                    <p className="text-sm font-medium text-erb-navy mb-6 text-center" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{member.education}</p>
+                    <h3 className={getJapaneseTextClass(locale, "text-xl font-bold text-erb-navy mb-1 text-center")}>{member.name}</h3>
+                    <p className={getJapaneseTextClass(locale, "text-lg text-erb-blue-500 font-semibold mb-1 text-center")}>{member.role}</p>
+                    <p className={getJapaneseTextClass(locale, "text-sm text-erb-gray-600 mb-2 text-center")}>{member.experience}</p>
+                    <p className={getJapaneseTextClass(locale, "text-sm font-medium text-erb-navy mb-6 text-center")}>{member.education}</p>
 
-                    <p className="text-erb-gray-600 leading-relaxed mb-6 text-left px-2 md:px-0" style={{ wordBreak: locale === 'ja' ? 'keep-all' : 'normal', overflowWrap: 'break-word' }}>{member.bio}</p>
+                    <p className={getJapaneseTextClass(locale, "text-erb-gray-600 leading-relaxed mb-6 text-left px-2 md:px-0")}>{member.bio}</p>
                     
                     {member.linkedin && (
                       <div className="text-left">
